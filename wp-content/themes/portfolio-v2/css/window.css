@@ -1,0 +1,258 @@
+.window-click-contents {
+  position: relative;
+  cursor: pointer;
+  display: none;
+  max-width: 640px;
+  margin-inline: auto;
+  z-index: 2;
+}
+.window-click-contents img {
+  width: 100%;
+}
+
+.window-modal .modal-close {
+  display: none;
+}
+
+.window-contents {
+  position: relative;
+  background-color: #b4d9ff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px 1px rgba(60, 60, 60, 0.25);
+  width: 100%;
+  max-width: 870px;
+  aspect-ratio: 5/3;
+  margin-inline: auto;
+  overflow: hidden;
+  z-index: 1;
+}
+.window-contents.window-contents-main {
+  background-color: #b4d9ff;
+}
+.window-contents.window-contents-main .tab-menu_item.is-active::after {
+  background: #b4d9ff;
+}
+.window-contents.window-contents-main .tab-menu_item:has(+ .is-active)::after {
+  background: #b4d9ff;
+}
+.window-contents.window-contents-works {
+  background-color: #9beed6;
+}
+.window-contents.window-contents-works .tab-menu_item.is-active::after {
+  background: #9beed6;
+}
+.window-contents.window-contents-works .tab-menu_item:has(+ .is-active)::after {
+  background: #9beed6;
+}
+.window-contents .tab-menu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 16px 0;
+  overflow: auto;
+}
+.window-contents .tab-menu_item {
+  position: relative;
+  margin-bottom: 8px;
+}
+.window-contents .tab-menu_item .item_inner {
+  width: 160px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 12px;
+  padding: 8px;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+.window-contents .tab-menu_item .item_inner:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.window-contents .tab-menu_item .material-symbols-outlined {
+  font-size: 20px;
+}
+.window-contents .tab-menu_item .tab-text {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.window-contents .tab-menu_item.is-active {
+  background-color: #fff;
+  border: none;
+  border-radius: 8px 8px 0 0;
+  padding-left: 0;
+  margin-bottom: 0;
+  pointer-events: none;
+}
+.window-contents .tab-menu_item.is-active .item_inner {
+  padding: 8px 8px 16px;
+}
+.window-contents .tab-menu_item.is-active::before, .window-contents .tab-menu_item.is-active::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  bottom: 0;
+  right: -8px;
+}
+.window-contents .tab-menu_item.is-active::before {
+  background: #fff;
+}
+.window-contents .tab-menu_item.is-active::after {
+  background: #b4d9ff;
+  border-radius: 0 0 0 100%;
+}
+.window-contents .tab-menu_item.is-active .tab-menu_line {
+  display: none;
+}
+.window-contents .tab-menu_item:has(+ .is-active) .tab-menu_line {
+  display: none;
+}
+.window-contents .tab-menu_item:has(+ .is-active)::before, .window-contents .tab-menu_item:has(+ .is-active)::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  bottom: -8px;
+  right: -16px;
+  z-index: -1;
+}
+.window-contents .tab-menu_item:has(+ .is-active)::before {
+  background: #fff;
+}
+.window-contents .tab-menu_item:has(+ .is-active)::after {
+  background: #b4d9ff;
+  border-radius: 0 0 100% 0;
+}
+.window-contents .tab-menu_switch {
+  margin-bottom: 8px;
+}
+.window-contents .tab-menu_switch .material-symbols-outlined {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 6px;
+  font-size: 24px;
+  box-sizing: content-box;
+  transition: background 0.3s;
+}
+.window-contents .tab-menu_switch:hover .material-symbols-outlined {
+  background-color: white;
+}
+.window-contents .tab-menu_line {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -2px;
+  height: 20px;
+  width: 2px;
+  background-color: #000;
+  transition: 0.2s all;
+}
+.window-contents .tab-menu_item:hover .tab-menu_line {
+  opacity: 0;
+}
+.window-contents .tab-content {
+  display: none;
+  background-color: #fff;
+  border-radius: 8px 8px 0 0;
+  height: calc(100% - 52px);
+  overflow-y: scroll;
+}
+.window-contents .tab-content.is-display {
+  display: block;
+}
+.window-contents .tab-content img {
+  display: none;
+  margin-inline: auto;
+}
+.window-contents .tab-content img.sp-view {
+  width: 300px;
+}
+.window-contents.pc-view .tab-content img.pc-view {
+  display: block;
+}
+.window-contents.sp-view .tab-content img.sp-view {
+  display: block;
+}
+.window-contents h2 {
+  margin-bottom: 40px;
+}
+.window-contents p {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 899px) {
+  .window-click-contents {
+    display: block;
+  }
+  .window-modal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.4s all;
+    z-index: 200;
+  }
+  .window-modal.modal-active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .window-modal .modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 1;
+  }
+  .window-modal .window-contents {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 75%;
+    aspect-ratio: auto;
+  }
+  .window-modal .window-contents .tab-menu {
+    border-bottom: 3px solid #e0e0e0;
+  }
+  .window-modal .window-contents .tab-menu_item.is-active {
+    background: none;
+    margin-bottom: 8px;
+  }
+  .window-modal .window-contents .tab-menu_item.is-active::before {
+    width: 100%;
+    height: 4px;
+    left: 0;
+    right: auto;
+    bottom: -8px;
+  }
+  .window-modal .window-contents .tab-menu_item.is-active::after {
+    display: none;
+  }
+  .window-modal .window-contents .tab-menu_item.is-active .item_inner {
+    padding: 8px;
+  }
+  .window-modal .window-contents .tab-menu_item:has(+ .is-active)::before, .window-modal .window-contents .tab-menu_item:has(+ .is-active)::after {
+    display: none;
+  }
+  .window-modal .window-contents .tab-menu_line {
+    display: none;
+  }
+  .window-modal .window-contents .tab-content {
+    border-radius: 0;
+  }
+  .window-modal .window-contents .tab-content img.sp-view {
+    width: 100%;
+  }
+}/*# sourceMappingURL=window.css.map */

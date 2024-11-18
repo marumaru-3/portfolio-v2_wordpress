@@ -1,0 +1,17 @@
+.archive-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
+}
+.archive-list li {
+  width: calc(33% - 48px);
+}
+.archive-list li .archive-img {
+  border-radius: 24px;
+  margin-bottom: 28px;
+}
+.archive-list li p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}/*# sourceMappingURL=archive.css.map */

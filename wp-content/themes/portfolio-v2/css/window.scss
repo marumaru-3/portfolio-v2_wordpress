@@ -1,0 +1,343 @@
+// Window
+.window-click-contents {
+  position: relative;
+  cursor: pointer;
+  display: none;
+  max-width: 640px;
+  margin-inline: auto;
+  z-index: 2;
+
+  img {
+    width: 100%;
+  }
+}
+
+.window-modal {
+  .modal-close {
+    display: none;
+  }
+}
+
+.window-contents {
+  $window-main-color: #b4d9ff;
+  $window-works-color: #9beed6;
+  $window-webapp-color: #b4d9ff;
+
+  position: relative;
+  background-color: #b4d9ff; // 初期カラー
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px 1px rgba($color: #3c3c3c, $alpha: 0.25);
+  width: 100%;
+  max-width: 870px;
+  aspect-ratio: 5 / 3;
+  margin-inline: auto;
+  overflow: hidden;
+  z-index: 1;
+
+  // TOPページ用
+  &.window-contents-main {
+    background-color: $window-main-color;
+
+    .tab-menu {
+      &_item {
+        &.is-active {
+          &::after {
+            background: $window-main-color;
+          }
+        }
+
+        &:has(+ .is-active) {
+          &::after {
+            background: $window-main-color;
+          }
+        }
+      }
+    }
+  }
+  // Worksページ用
+  &.window-contents-works {
+    background-color: $window-works-color;
+
+    .tab-menu {
+      &_item {
+        &.is-active {
+          &::after {
+            background: $window-works-color;
+          }
+        }
+
+        &:has(+ .is-active) {
+          &::after {
+            background: $window-works-color;
+          }
+        }
+      }
+    }
+  }
+
+  .tab-menu {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 16px 0;
+    overflow: auto;
+
+    &_item {
+      position: relative;
+      margin-bottom: 8px;
+
+      .item_inner {
+        width: 160px;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        border-radius: 8px;
+        font-size: 12px;
+        padding: 8px;
+        transition: background 0.3s;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgba($color: #fff, $alpha: 0.4);
+        }
+      }
+
+      .material-symbols-outlined {
+        font-size: 20px;
+      }
+
+      .tab-text {
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      &.is-active {
+        background-color: #fff;
+        border: none;
+        border-radius: 8px 8px 0 0;
+        padding-left: 0;
+        margin-bottom: 0;
+        pointer-events: none;
+
+        .item_inner {
+          padding: 8px 8px 16px;
+        }
+
+        &::before,
+        &::after {
+          content: "";
+          width: 8px;
+          height: 8px;
+          position: absolute;
+          bottom: 0;
+          right: -8px;
+        }
+        &::before {
+          background: #fff;
+        }
+        &::after {
+          background: #b4d9ff;
+          border-radius: 0 0 0 100%;
+        }
+
+        .tab-menu_line {
+          display: none;
+        }
+      }
+
+      &:has(+ .is-active) {
+        .tab-menu_line {
+          display: none;
+        }
+
+        &::before,
+        &::after {
+          content: "";
+          width: 8px;
+          height: 8px;
+          position: absolute;
+          bottom: -8px;
+          right: -16px;
+          z-index: -1;
+        }
+        &::before {
+          background: #fff;
+        }
+        &::after {
+          background: #b4d9ff;
+          border-radius: 0 0 100% 0;
+        }
+      }
+    }
+
+    &_switch {
+      margin-bottom: 8px;
+
+      .material-symbols-outlined {
+        display: inline-block;
+        background-color: rgba($color: #fff, $alpha: 0.7);
+        border-radius: 8px;
+        cursor: pointer;
+        padding: 6px;
+        font-size: 24px;
+        box-sizing: content-box;
+        transition: background 0.3s;
+      }
+
+      &:hover {
+        .material-symbols-outlined {
+          background-color: rgba($color: #fff, $alpha: 1);
+        }
+      }
+    }
+
+    &_line {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -2px;
+      height: 20px;
+      width: 2px;
+      background-color: #000;
+      transition: 0.2s all;
+    }
+
+    &_item:hover {
+      .tab-menu_line {
+        opacity: 0;
+      }
+    }
+  }
+
+  .tab-content {
+    display: none;
+    background-color: #fff;
+    border-radius: 8px 8px 0 0;
+    height: calc(100% - 52px);
+    overflow-y: scroll;
+
+    &.is-display {
+      display: block;
+    }
+
+    img {
+      display: none;
+      margin-inline: auto;
+
+      &.sp-view {
+        width: 300px;
+      }
+    }
+  }
+  &.pc-view .tab-content {
+    img.pc-view {
+      display: block;
+    }
+  }
+  &.sp-view .tab-content {
+    img.sp-view {
+      display: block;
+    }
+  }
+
+  h2 {
+    margin-bottom: 40px;
+  }
+  p {
+    margin-bottom: 16px;
+  }
+}
+// / Window
+
+@media (max-width: 899px) {
+  // window
+  .window-click-contents {
+    display: block;
+  }
+
+  .window-modal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.4s all;
+    z-index: 200;
+
+    &.modal-active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: inline-block;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 1;
+    }
+
+    .window-contents {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+      height: 75%;
+      aspect-ratio: auto;
+
+      .tab-menu {
+        border-bottom: 3px solid #e0e0e0;
+
+        &_item {
+          &.is-active {
+            background: none;
+            margin-bottom: 8px;
+
+            &::before {
+              width: 100%;
+              height: 4px;
+              left: 0;
+              right: auto;
+              bottom: -8px;
+            }
+            &::after {
+              display: none;
+            }
+
+            .item_inner {
+              padding: 8px;
+            }
+          }
+
+          &:has(+ .is-active) {
+            &::before,
+            &::after {
+              display: none;
+            }
+          }
+        }
+
+        &_line {
+          display: none;
+        }
+      }
+
+      .tab-content {
+        border-radius: 0;
+
+        img.sp-view {
+          width: 100%;
+        }
+      }
+    }
+  }
+  // / window
+}

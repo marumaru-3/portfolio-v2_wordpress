@@ -1,0 +1,20 @@
+.archive-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
+
+  li {
+    width: calc(33% - (72px / 3 * 2));
+
+    .archive-img {
+      border-radius: 24px;
+      margin-bottom: 28px;
+    }
+
+    p {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}

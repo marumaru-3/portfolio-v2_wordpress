@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/* 初期設定 */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  color: #222;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  position: relative;
+  display: block;
+  contain: paint;
+}
+
+section {
+  position: relative;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a,
+button {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+body,
+select,
+input,
+textarea,
+button {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+p {
+  font-weight: 500;
+}
+
+/* / 初期設定 */
+@media (max-width: 899px) {
+  main {
+    contain: none;
+    overflow: hidden;
+  }
+}/*# sourceMappingURL=common.css.map */
