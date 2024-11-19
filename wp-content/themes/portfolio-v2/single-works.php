@@ -1,5 +1,6 @@
 <?php get_header(); ?>
-<main id="single-works" class="pages-main single-main">
+<main id="single-works"
+      class="pages-main single-main">
   <div class="single-top">
     <div class="section_bg">
       <div></div>
@@ -7,9 +8,8 @@
       <div></div>
     </div>
     <div class="window-click-contents window-modal-open">
-      <img
-        src="<?php echo get_theme_file_uri('/images/top/web-app/app-sample.webp'); ?>"
-        alt="詳しくはこちらをクリック！" />
+      <img src="<?php echo get_theme_file_uri('/images/top/web-app/app-sample.webp'); ?>"
+           alt="" />
     </div>
     <div class="window-modal">
       <div class="modal-close window-modal-close">×</div>
@@ -48,52 +48,44 @@
           </li>
         </ul>
         <div class="tab-content is-display">
-          <img
-            class="pc-view"
-            src="<?php echo get_theme_file_uri('/images/top/tab/pc/twenty5-pc.webp'); ?>"
-            alt=""
-            loading="lazy" />
-          <img
-            class="sp-view"
-            src="<?php echo get_theme_file_uri('/images/top/tab/sp/twenty5-sp.webp'); ?>"
-            alt=""
-            loading="lazy" />
+          <img class="pc-view"
+               src="<?php echo get_theme_file_uri('/images/top/tab/pc/twenty5-pc.webp'); ?>"
+               alt=""
+               loading="lazy" />
+          <img class="sp-view"
+               src="<?php echo get_theme_file_uri('/images/top/tab/sp/twenty5-sp.webp'); ?>"
+               alt=""
+               loading="lazy" />
         </div>
         <div class="tab-content">
-          <img
-            class="pc-view"
-            src="<?php echo get_theme_file_uri('/images/top/tab/pc/designpiano-pc.webp'); ?>"
-            alt=""
-            loading="lazy" />
-          <img
-            class="sp-view"
-            src="<?php echo get_theme_file_uri('/images/top/tab/sp/designpiano-sp.webp'); ?>"
-            alt=""
-            loading="lazy" />
+          <img class="pc-view"
+               src="<?php echo get_theme_file_uri('/images/top/tab/pc/designpiano-pc.webp'); ?>"
+               alt=""
+               loading="lazy" />
+          <img class="sp-view"
+               src="<?php echo get_theme_file_uri('/images/top/tab/sp/designpiano-sp.webp'); ?>"
+               alt=""
+               loading="lazy" />
         </div>
         <div class="tab-content">
-          <img
-            class="pc-view"
-            src="<?php echo get_theme_file_uri('/images/top/tab/pc/twenty5-pc.webp'); ?>"
-            alt=""
-            loading="lazy" />
-          <img
-            class="sp-view"
-            src="<?php echo get_theme_file_uri('/images/top/tab/sp/twenty5-sp.webp'); ?>"
-            alt=""
-            loading="lazy" />
+          <img class="pc-view"
+               src="<?php echo get_theme_file_uri('/images/top/tab/pc/twenty5-pc.webp'); ?>"
+               alt=""
+               loading="lazy" />
+          <img class="sp-view"
+               src="<?php echo get_theme_file_uri('/images/top/tab/sp/twenty5-sp.webp'); ?>"
+               alt=""
+               loading="lazy" />
         </div>
         <div class="tab-content">
-          <img
-            class="pc-view"
-            src="<?php echo get_theme_file_uri('/images/top/tab/pc/twenty5-pc.webp'); ?>"
-            alt=""
-            loading="lazy" />
-          <img
-            class="sp-view"
-            src="<?php echo get_theme_file_uri('/images/top/tab/sp/twenty5-sp.webp'); ?>"
-            alt=""
-            loading="lazy" />
+          <img class="pc-view"
+               src="<?php echo get_theme_file_uri('/images/top/tab/pc/twenty5-pc.webp'); ?>"
+               alt=""
+               loading="lazy" />
+          <img class="sp-view"
+               src="<?php echo get_theme_file_uri('/images/top/tab/sp/twenty5-sp.webp'); ?>"
+               alt=""
+               loading="lazy" />
         </div>
       </div>
     </div>
@@ -108,35 +100,25 @@
             <li>
               <h3>制作期間</h3>
               <p>
-                2021年8月～10月末
+                <?php echo get_field('work_date'); ?>
               </p>
             </li>
             <li>
               <h3>担当領域</h3>
               <p>
-                コーディング<br>
-                レンタルサーバー構築<br>
-                Google Analytics設定
+                <?php echo get_field('pic'); ?>
               </p>
             </li>
             <li>
               <h3>使用言語・ツール</h3>
               <p>
-                HTML/CSS<br>
-                PHP<br>
-                JavaScript<br>
-                WordPress<br>
-                Illustrator<br>
-                さくらレンタルサーバー<br>
-                Google Analytics<br>
-                Google Search Console
+                <?php echo get_field('use_tool'); ?>
               </p>
             </li>
             <li>
               <h3>制作体制</h3>
               <p>
-                Webデザイナー /ディレクター　1名<br>
-                コーダー　1名
+                <?php echo get_field('team'); ?>
               </p>
             </li>
           </ul>
@@ -146,7 +128,8 @@
             <li>
               <h3>サイトURL</h3>
               <p>
-                <a href="https://designpianows.com/" target="_blank">https://designpianows.com/</a>
+                <a href="https://designpianows.com/"
+                   target="_blank">https://designpianows.com/</a>
               </p>
             </li>
             <li>
@@ -184,24 +167,28 @@
         <ul class="other-list">
           <li>
             <div class="other-img">
-              <img src="<?php echo get_theme_file_uri('/images/top/web-app/app-sample.webp'); ?>" alt="" />
+              <img src="<?php echo get_theme_file_uri('/images/top/web-app/app-sample.webp'); ?>"
+                   alt="" />
             </div>
             <p>ホームページタイトル | 省略名称</p>
           </li>
           <li>
             <div class="other-img">
-              <img src="<?php echo get_theme_file_uri('/images/top/web-app/app-sample.webp'); ?>" alt="" />
+              <img src="<?php echo get_theme_file_uri('/images/top/web-app/app-sample.webp'); ?>"
+                   alt="" />
             </div>
             <p>ホームページタイトル | 省略名称</p>
           </li>
           <li>
             <div class="other-img">
-              <img src="<?php echo get_theme_file_uri('/images/top/web-app/app-sample.webp'); ?>" alt="" />
+              <img src="<?php echo get_theme_file_uri('/images/top/web-app/app-sample.webp'); ?>"
+                   alt="" />
             </div>
             <p>ホームページタイトル | 省略名称</p>
           </li>
         </ul>
-        <a href="#" class="btn works-btn">制作実績をもっと見る</a>
+        <a href="#"
+           class="btn works-btn">制作実績をもっと見る</a>
       </div>
     </div>
   </div>

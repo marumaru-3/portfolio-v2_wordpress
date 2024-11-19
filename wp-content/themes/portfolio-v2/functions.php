@@ -52,3 +52,6 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('archive-css', get_template_directory_uri() . '/css/archive.css', array(), '1.0.1');
   }
 });
+
+// アップロード画像のリサイズ機能を無効化
+add_filter("big_image_size_threshold", "__return_false");
