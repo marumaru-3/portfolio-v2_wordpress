@@ -3,7 +3,7 @@
   <section id="top">
     <p class="top-text">
       どのデバイスでも使いやすい<br
-        class="top-text_br" />サイト制作を心がけていますあああああああああ
+        class="top-text_br" />サイト制作を心がけています
     </p>
     <div class="section_bg">
       <div></div>
