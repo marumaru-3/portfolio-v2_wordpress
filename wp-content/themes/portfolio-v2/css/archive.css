@@ -27,11 +27,15 @@
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
+  transition: 0.3s all;
 }
 .archive-list li p {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
+}
+.archive-list li a:hover .archive-img img {
+  height: 120%;
 }
 
 @media (max-width: 1199px) {
