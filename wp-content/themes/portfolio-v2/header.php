@@ -45,7 +45,7 @@
             <a href="<?php echo esc_url(home_url('/')); ?>#skills">Skills</a>
           </li>
           <li>
-            <a href="<?php echo esc_url(home_url('/')); ?>#works">Works</a>
+            <a href="<?php echo esc_url(home_url('/')); ?>works">Works</a>
           </li>
           <li>
             <a href="<?php echo esc_url(home_url('/')); ?>#web-app">Web App</a>
