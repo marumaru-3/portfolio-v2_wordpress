@@ -8,6 +8,7 @@
 }
 .window-click-contents img {
   width: 100%;
+  height: auto;
 }
 
 .window-modal .modal-close {
@@ -59,12 +60,13 @@
   width: 160px;
   display: flex;
   gap: 8px;
-  align-items: center;
+  align-items: flex-start;
   border-radius: 8px;
   font-size: 12px;
-  padding: 8px;
+  padding: 8px 18px 8px 8px;
   transition: background 0.3s;
   cursor: pointer;
+  overflow: hidden;
 }
 .window-contents .tab-menu_item .item_inner:hover {
   background-color: rgba(255, 255, 255, 0.4);
@@ -85,7 +87,7 @@
   pointer-events: none;
 }
 .window-contents .tab-menu_item.is-active .item_inner {
-  padding: 8px 8px 16px;
+  padding: 8px 18px 16px 8px;
 }
 .window-contents .tab-menu_item.is-active::before, .window-contents .tab-menu_item.is-active::after {
   content: "";

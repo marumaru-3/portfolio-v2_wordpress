@@ -26,6 +26,8 @@
 .archive-list li img {
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
   height: 100%;
   transition: 0.3s all;
 }
