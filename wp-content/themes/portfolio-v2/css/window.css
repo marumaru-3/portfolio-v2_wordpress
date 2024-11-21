@@ -45,6 +45,15 @@
 .window-contents.window-contents-works .tab-menu_item:has(+ .is-active)::after {
   background: #9beed6;
 }
+.window-contents.window-contents-web-app {
+  background-color: #f0b4f6;
+}
+.window-contents.window-contents-web-app .tab-menu_item.is-active::after {
+  background: #f0b4f6;
+}
+.window-contents.window-contents-web-app .tab-menu_item:has(+ .is-active)::after {
+  background: #f0b4f6;
+}
 .window-contents .tab-menu {
   display: flex;
   align-items: center;

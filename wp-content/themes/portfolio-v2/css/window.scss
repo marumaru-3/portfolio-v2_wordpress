@@ -22,7 +22,7 @@
 .window-contents {
   $window-main-color: #b4d9ff;
   $window-works-color: #9beed6;
-  $window-webapp-color: #b4d9ff;
+  $window-webapp-color: #f0b4f6;
 
   position: relative;
   background-color: #b4d9ff; // 初期カラー
@@ -55,7 +55,7 @@
       }
     }
   }
-  // Worksページ用
+  // Works詳細ページ用
   &.window-contents-works {
     background-color: $window-works-color;
 
@@ -70,6 +70,26 @@
         &:has(+ .is-active) {
           &::after {
             background: $window-works-color;
+          }
+        }
+      }
+    }
+  }
+  // WebApp詳細ページ用
+  &.window-contents-web-app {
+    background-color: $window-webapp-color;
+
+    .tab-menu {
+      &_item {
+        &.is-active {
+          &::after {
+            background: $window-webapp-color;
+          }
+        }
+
+        &:has(+ .is-active) {
+          &::after {
+            background: $window-webapp-color;
           }
         }
       }

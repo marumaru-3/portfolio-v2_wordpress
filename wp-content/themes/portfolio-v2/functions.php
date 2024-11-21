@@ -1,5 +1,6 @@
 <?php
-function my_setup() {
+function my_setup()
+{
   add_theme_support('post-thumbnails'); // アイキャッチ画像を有効化
   add_theme_support('automatic-feed-links'); // 投稿とコメントのRSSフィードのリンクを有効化
   add_theme_support('title-tag'); // titleタグ自動生成
@@ -13,7 +14,8 @@ function my_setup() {
 }
 add_action('after_setup_theme', 'my_setup');
 
-function my_script_init() {
+function my_script_init()
+{
   // WordPressに含まれているjquery.jsを読み込まない
   wp_deregister_script('jquery');
 
@@ -42,13 +44,13 @@ add_action('wp_enqueue_scripts', function () {
   }
 
   // 制作実績とウェブアプリの個別ページのとき読み込む
-  if (is_singular(array('works'))) {
+  if (is_singular(array('works', 'web-app'))) {
     wp_enqueue_style('single-css', get_template_directory_uri() . '/css/single.css', array(), '1.0.1');
     wp_enqueue_style('window-css', get_template_directory_uri() . '/css/window.css', array(), '1.0.1');
     wp_enqueue_script('window-js', get_template_directory_uri() . '/js/window.js', array(), '1.0.1', true);
   }
   // 制作実績とウェブアプリの一覧ページのとき読み込む
-  if (is_post_type_archive(array('works'))) {
+  if (is_post_type_archive(array('works', 'web-app'))) {
     wp_enqueue_style('archive-css', get_template_directory_uri() . '/css/archive.css', array(), '1.0.1');
   }
 });
