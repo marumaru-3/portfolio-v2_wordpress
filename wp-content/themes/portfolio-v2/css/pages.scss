@@ -56,18 +56,19 @@
   .pages-main {
     .section_bg {
       div:nth-of-type(1) {
-        top: 6%;
+        top: 280px;
         left: auto;
-        right: -12%;
+        right: -80px;
       }
       div:nth-of-type(2) {
-        top: 81%;
+        top: auto;
         left: auto;
-        right: -4%;
+        right: -40px;
+        bottom: 0;
       }
       div:nth-of-type(3) {
         top: 50%;
-        left: -4%;
+        left: -40px;
       }
     }
   }
@@ -79,11 +80,8 @@
 
     .section_bg {
       div:nth-of-type(1) {
-        top: 2%;
+        top: min(240px, 40vw);
         width: 200px;
-      }
-      div:nth-of-type(2) {
-        top: 79%;
       }
     }
   }

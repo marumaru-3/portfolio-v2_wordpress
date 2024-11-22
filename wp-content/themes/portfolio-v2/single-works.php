@@ -1,13 +1,13 @@
 <?php get_header(); ?>
 <main id="single-works"
   class="pages-main single-main">
+  <div class="section_bg">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
   <?php if (have_posts()): while (have_posts()): the_post(); ?>
       <div class="single-top">
-        <div class="section_bg">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
         <div class="window-click-contents window-modal-open">
           <?php the_post_thumbnail('full') ?>
         </div>
