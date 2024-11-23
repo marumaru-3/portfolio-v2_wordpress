@@ -187,29 +187,88 @@
               <span>その他の制作実績</span>
             </h3>
             <ul class="other-list">
-              <li>
-                <div class="other-img">
-                  <img src="<?php echo get_theme_file_uri('/images/top/web-app/app-sample.webp'); ?>"
-                    alt="" />
-                </div>
-                <p>ホームページタイトル | 省略名称</p>
-              </li>
-              <li>
-                <div class="other-img">
-                  <img src="<?php echo get_theme_file_uri('/images/top/web-app/app-sample.webp'); ?>"
-                    alt="" />
-                </div>
-                <p>ホームページタイトル | 省略名称</p>
-              </li>
-              <li>
-                <div class="other-img">
-                  <img src="<?php echo get_theme_file_uri('/images/top/web-app/app-sample.webp'); ?>"
-                    alt="" />
-                </div>
-                <p>ホームページタイトル | 省略名称</p>
-              </li>
+              <?php
+              // 現在の投稿IDを取得
+              $current_post_id = get_the_ID();
+
+              // 現在の記事の投稿日時を取得
+              $current_post_date = get_the_date('Y-m-d H:i:s', $current_post_id);
+
+              // WP_Query で前の記事を最大3つ取得
+              $args_previous = array(
+                'post_type'      => 'works',  // カスタム投稿タイプを指定
+                'posts_per_page' => 3,       // 最大3つまで取得
+                'post__not_in'   => array($current_post_id), // 現在の投稿を除外
+                'orderby'        => 'date',  // 投稿日時順
+                'order'          => 'DESC',  // 降順
+                'post_status'    => 'publish', // 公開されている投稿のみ
+                'date_query'     => array(
+                  array(
+                    'before' => $current_post_date, // 現在の記事の投稿日より前の記事を取得
+                  ),
+                ),
+              );
+
+              $query_previous = new WP_Query($args_previous);
+
+              // 取得した前の記事の数をカウント
+              $previous_posts_count = $query_previous->found_posts;
+
+              // 前の記事が3つ未満の場合、残りを最新記事で補充
+              $remaining_posts_count = max(0, 3 - $previous_posts_count);
+
+              // 前の記事が3件未満で、残りを最新記事で補充する場合のみ最新記事を取得
+              $args_latest = array();
+              if ($remaining_posts_count > 0) {
+                $args_latest = array(
+                  'post_type'      => 'works', // カスタム投稿タイプを指定
+                  'posts_per_page' => $remaining_posts_count, // 前の記事が足りない場合にその数だけ取得
+                  'orderby'        => 'date',
+                  'order'          => 'DESC',
+                  'post_status'    => 'publish',
+                );
+              }
+
+              $query_latest = new WP_Query($args_latest);
+
+              // 前の記事を表示
+              if ($query_previous->have_posts()) :
+                while ($query_previous->have_posts()) : $query_previous->the_post();
+              ?>
+                  <li>
+                    <a href="<?php the_permalink(); ?>">
+                      <div class="other-img">
+                        <img src="<?php echo get_theme_file_uri('/images/top/web-app/app-sample.webp'); ?>"
+                          alt="" />
+                      </div>
+                      <p><?php the_title(); ?></p>
+                    </a>
+                  </li>
+                <?php
+                endwhile;
+                wp_reset_postdata(); // クエリ後にリセット
+              endif;
+
+              // 最新の記事を表示（前の記事の後に表示）
+              if ($query_latest->have_posts()) :
+                while ($query_latest->have_posts()) : $query_latest->the_post();
+                ?>
+                  <li>
+                    <a href="<?php the_permalink(); ?>">
+                      <div class="other-img">
+                        <img src="<?php echo get_theme_file_uri('/images/top/web-app/app-sample.webp'); ?>"
+                          alt="" />
+                      </div>
+                      <p><?php the_title(); ?></p>
+                    </a>
+                  </li>
+              <?php
+                endwhile;
+                wp_reset_postdata(); // クエリ後にリセット
+              endif;
+              ?>
             </ul>
-            <a href="#"
+            <a href="<?php echo get_post_type_archive_link('works'); ?>"
               class="btn works-btn">制作実績をもっと見る</a>
           </div>
         </div>

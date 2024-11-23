@@ -840,12 +840,21 @@ section {
         img {
           height: 100%;
           object-fit: cover;
+          transition: 0.3s all;
         }
       }
       p {
         font-size: 20px;
         font-weight: bold;
         text-align: center;
+      }
+
+      a:hover {
+        .other-img {
+          img {
+            height: 120%;
+          }
+        }
       }
     }
   }
@@ -956,11 +965,6 @@ footer {
 
         &:hover {
           &.github {
-            border-radius: 24px;
-            width: min(16vw, 160px);
-            height: auto;
-            aspect-ratio: 9/7;
-
             .title {
               display: inline-block;
               background-repeat: no-repeat;
