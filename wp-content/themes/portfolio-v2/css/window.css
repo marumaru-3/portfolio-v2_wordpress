@@ -151,6 +151,12 @@
 .window-contents .tab-menu_switch:hover .material-symbols-outlined {
   background-color: white;
 }
+.window-contents .tab-menu_switch.no-switch {
+  pointer-events: none;
+}
+.window-contents .tab-menu_switch.no-switch .material-symbols-outlined {
+  background-color: rgba(229, 229, 229, 0.7);
+}
 .window-contents .tab-menu_line {
   position: absolute;
   top: 50%;

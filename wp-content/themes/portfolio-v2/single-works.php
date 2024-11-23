@@ -15,9 +15,15 @@
           <div class="modal-close window-modal-close">×</div>
           <div class="window-contents window-contents-works pc-view">
             <ul class="tab-menu">
-              <li class="tab-menu_item tab-menu_switch">
-                <span class="material-symbols-outlined">devices</span>
-              </li>
+              <?php if (get_field('sp_img01')) : ?>
+                <li class="tab-menu_item tab-menu_switch">
+                  <span class="material-symbols-outlined">devices</span>
+                </li>
+              <?php else : ?>
+                <li class="tab-menu_item tab-menu_switch no-switch">
+                  <span class="material-symbols-outlined">devices</span>
+                </li>
+              <?php endif; ?>
               <li class="tab-menu_item tab is-active">
                 <div class="item_inner">
                   <span class="material-symbols-outlined">globe</span>
@@ -25,27 +31,33 @@
                   <div class="tab-menu_line"></div>
                 </div>
               </li>
-              <li class="tab-menu_item tab">
-                <div class="item_inner">
-                  <span class="material-symbols-outlined">globe</span>
-                  <span class="tab-text"><?php the_field('pc_text02'); ?> | <?php the_title(); ?></span>
-                  <div class="tab-menu_line"></div>
-                </div>
-              </li>
-              <li class="tab-menu_item tab">
-                <div class="item_inner">
-                  <span class="material-symbols-outlined">globe</span>
-                  <span class="tab-text"><?php the_field('pc_text03'); ?> | <?php the_title(); ?></span>
-                  <div class="tab-menu_line"></div>
-                </div>
-              </li>
-              <li class="tab-menu_item tab">
-                <div class="item_inner">
-                  <span class="material-symbols-outlined">globe</span>
-                  <span class="tab-text"><?php the_field('pc_text04'); ?> | <?php the_title(); ?></span>
-                  <div class="tab-menu_line"></div>
-                </div>
-              </li>
+              <?php if (get_field('pc_text02')) : ?>
+                <li class="tab-menu_item tab">
+                  <div class="item_inner">
+                    <span class="material-symbols-outlined">globe</span>
+                    <span class="tab-text"><?php the_field('pc_text02'); ?> | <?php the_title(); ?></span>
+                    <div class="tab-menu_line"></div>
+                  </div>
+                </li>
+              <?php endif; ?>
+              <?php if (get_field('pc_text03')) : ?>
+                <li class="tab-menu_item tab">
+                  <div class="item_inner">
+                    <span class="material-symbols-outlined">globe</span>
+                    <span class="tab-text"><?php the_field('pc_text03'); ?> | <?php the_title(); ?></span>
+                    <div class="tab-menu_line"></div>
+                  </div>
+                </li>
+              <?php endif; ?>
+              <?php if (get_field('pc_text04')) : ?>
+                <li class="tab-menu_item tab">
+                  <div class="item_inner">
+                    <span class="material-symbols-outlined">globe</span>
+                    <span class="tab-text"><?php the_field('pc_text04'); ?> | <?php the_title(); ?></span>
+                    <div class="tab-menu_line"></div>
+                  </div>
+                </li>
+              <?php endif; ?>
             </ul>
             <div class="tab-content is-display">
               <img class="pc-view"
@@ -57,36 +69,42 @@
                 alt=""
                 loading="lazy" />
             </div>
-            <div class="tab-content">
-              <img class="pc-view"
-                src="<?php the_field('pc_img02'); ?>"
-                alt=""
-                loading="lazy" />
-              <img class="sp-view"
-                src="<?php the_field('sp_img02'); ?>"
-                alt=""
-                loading="lazy" />
-            </div>
-            <div class="tab-content">
-              <img class="pc-view"
-                src="<?php the_field('pc_img03'); ?>"
-                alt=""
-                loading="lazy" />
-              <img class="sp-view"
-                src="<?php the_field('sp_img03'); ?>"
-                alt=""
-                loading="lazy" />
-            </div>
-            <div class="tab-content">
-              <img class="pc-view"
-                src="<?php the_field('pc_img04'); ?>"
-                alt=""
-                loading="lazy" />
-              <img class="sp-view"
-                src="<?php the_field('sp_img04'); ?>"
-                alt=""
-                loading="lazy" />
-            </div>
+            <?php if (get_field('pc_img02')) : ?>
+              <div class="tab-content">
+                <img class="pc-view"
+                  src="<?php the_field('pc_img02'); ?>"
+                  alt=""
+                  loading="lazy" />
+                <img class="sp-view"
+                  src="<?php the_field('sp_img02'); ?>"
+                  alt=""
+                  loading="lazy" />
+              </div>
+            <?php endif; ?>
+            <?php if (get_field('pc_img03')) : ?>
+              <div class="tab-content">
+                <img class="pc-view"
+                  src="<?php the_field('pc_img03'); ?>"
+                  alt=""
+                  loading="lazy" />
+                <img class="sp-view"
+                  src="<?php the_field('sp_img03'); ?>"
+                  alt=""
+                  loading="lazy" />
+              </div>
+            <?php endif; ?>
+            <?php if (get_field('pc_img04')) : ?>
+              <div class="tab-content">
+                <img class="pc-view"
+                  src="<?php the_field('pc_img04'); ?>"
+                  alt=""
+                  loading="lazy" />
+                <img class="sp-view"
+                  src="<?php the_field('sp_img04'); ?>"
+                  alt=""
+                  loading="lazy" />
+              </div>
+            <?php endif; ?>
           </div>
         </div>
         <p class="single-att">※画像をタップでページ一覧が確認できます</p>
@@ -238,8 +256,7 @@
                   <li>
                     <a href="<?php the_permalink(); ?>">
                       <div class="other-img">
-                        <img src="<?php echo get_theme_file_uri('/images/top/web-app/app-sample.webp'); ?>"
-                          alt="" />
+                        <?php the_post_thumbnail('full') ?>
                       </div>
                       <p><?php the_title(); ?></p>
                     </a>
@@ -256,8 +273,7 @@
                   <li>
                     <a href="<?php the_permalink(); ?>">
                       <div class="other-img">
-                        <img src="<?php echo get_theme_file_uri('/images/top/web-app/app-sample.webp'); ?>"
-                          alt="" />
+                        <?php the_post_thumbnail('full') ?>
                       </div>
                       <p><?php the_title(); ?></p>
                     </a>

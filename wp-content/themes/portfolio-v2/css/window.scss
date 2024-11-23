@@ -211,6 +211,14 @@
           background-color: rgba($color: #fff, $alpha: 1);
         }
       }
+
+      &.no-switch {
+        pointer-events: none;
+
+        .material-symbols-outlined {
+          background-color: rgba($color: #e5e5e5, $alpha: 0.7);
+        }
+      }
     }
 
     &_line {
