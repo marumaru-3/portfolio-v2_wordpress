@@ -1,0 +1,33 @@
+@function calc-angle($percentage) {
+  @return $percentage * 3.6deg;
+}
+
+@mixin create-keyframe($percentage) {
+  #{$percentage}% {
+    transform: translate(
+        calc(100px * cos(#{calc-angle($percentage)})),
+        calc(100px * sin(#{calc-angle($percentage)}))
+      )
+      rotate(calc-angle($percentage));
+  }
+}
+
+@keyframes orbit {
+  @for $i from 0 to 101 {
+    @include create-keyframe($i);
+  }
+}
+
+.circle {
+  animation: orbit 2s linear infinite;
+}
+
+.circle:nth-child(1) {
+  animation-delay: 0s;
+}
+.circle:nth-child(2) {
+  animation-delay: -0.66s;
+}
+.circle:nth-child(3) {
+  animation-delay: -1.32s;
+}

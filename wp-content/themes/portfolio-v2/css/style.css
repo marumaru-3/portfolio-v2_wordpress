@@ -617,6 +617,10 @@ section h2 span {
 }
 #works .works-box .works-info_contents .works-text {
   margin-bottom: 28px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 #works .works-box .works-info .point-box {
   background-color: #fff;
@@ -627,6 +631,12 @@ section h2 span {
 #works .works-box .works-info .point-box_inner {
   width: 80%;
   position: relative;
+}
+#works .works-box .works-info .point-box_inner p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* 制限したい行数が3の場合 */
+  overflow: hidden;
 }
 #works .works-box .works-info .point-box h4 {
   font-size: 24px;
@@ -720,6 +730,7 @@ section h2 span {
   overflow: hidden;
 }
 #web-app .web-app-box .web-app-flex_right .web-app-img img {
+  width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -747,9 +758,12 @@ section h2 span {
   overflow: hidden;
 }
 .other-group .other-list li .other-img img {
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 50% 0%;
+     object-position: 50% 0%;
+  width: 100%;
+  height: 100%;
   transition: 0.3s all;
 }
 .other-group .other-list li p {

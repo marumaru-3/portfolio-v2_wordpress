@@ -17,10 +17,12 @@ function my_script_init() {
   // WordPressに含まれているjquery.jsを読み込まない
   wp_deregister_script('jquery');
 
-  wp_enqueue_style('common-css', get_template_directory_uri() . './css/common.css', array(), '1.0.1');
-  wp_enqueue_style('style-css', get_template_directory_uri() . './css/style.css', array(), '1.0.1');
-  wp_enqueue_script('menu-js', get_template_directory_uri() . './js/menu.js', array(), '1.0.1', true);
-  wp_enqueue_script('button-js', get_template_directory_uri() . './js/button.js', array(), '1.0.1', true);
+  wp_enqueue_style('common-css', get_template_directory_uri() . '/css/common.css', array(), '1.0.1');
+  wp_enqueue_style('loading-css', get_template_directory_uri() . '/css/loading.css', array(), '1.0.1');
+  wp_enqueue_style('loading-now-css', get_template_directory_uri() . '/css/loading-now.css', array(), '1.0.1');
+  wp_enqueue_style('style-css', get_template_directory_uri() . '/css/style.css', array(), '1.0.1');
+  wp_enqueue_script('menu-js', get_template_directory_uri() . '/js/menu.js', array(), '1.0.1', true);
+  wp_enqueue_script('button-js', get_template_directory_uri() . '/js/button.js', array(), '1.0.1', true);
 }
 add_action('wp_enqueue_scripts', 'my_script_init');
 

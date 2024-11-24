@@ -1,0 +1,959 @@
+@keyframes circle-hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.circle:nth-child(1) {
+  animation: orbit1 1s linear, circle-hide 0.3s linear 1s forwards;
+}
+
+@keyframes orbit1 {
+  0% {
+    transform: translate(calc(80px * cos(120deg) * 100 / 100), calc(80px * sin(120deg) * 100 / 100)) rotate(120deg);
+  }
+  1% {
+    transform: translate(calc(80px * cos(123.6deg) * 99 / 100), calc(80px * sin(123.6deg) * 99 / 100)) rotate(123.6deg);
+  }
+  2% {
+    transform: translate(calc(80px * cos(127.2deg) * 98 / 100), calc(80px * sin(127.2deg) * 98 / 100)) rotate(127.2deg);
+  }
+  3% {
+    transform: translate(calc(80px * cos(130.8deg) * 97 / 100), calc(80px * sin(130.8deg) * 97 / 100)) rotate(130.8deg);
+  }
+  4% {
+    transform: translate(calc(80px * cos(134.4deg) * 96 / 100), calc(80px * sin(134.4deg) * 96 / 100)) rotate(134.4deg);
+  }
+  5% {
+    transform: translate(calc(80px * cos(138deg) * 95 / 100), calc(80px * sin(138deg) * 95 / 100)) rotate(138deg);
+  }
+  6% {
+    transform: translate(calc(80px * cos(141.6deg) * 94 / 100), calc(80px * sin(141.6deg) * 94 / 100)) rotate(141.6deg);
+  }
+  7% {
+    transform: translate(calc(80px * cos(145.2deg) * 93 / 100), calc(80px * sin(145.2deg) * 93 / 100)) rotate(145.2deg);
+  }
+  8% {
+    transform: translate(calc(80px * cos(148.8deg) * 92 / 100), calc(80px * sin(148.8deg) * 92 / 100)) rotate(148.8deg);
+  }
+  9% {
+    transform: translate(calc(80px * cos(152.4deg) * 91 / 100), calc(80px * sin(152.4deg) * 91 / 100)) rotate(152.4deg);
+  }
+  10% {
+    transform: translate(calc(80px * cos(156deg) * 90 / 100), calc(80px * sin(156deg) * 90 / 100)) rotate(156deg);
+  }
+  11% {
+    transform: translate(calc(80px * cos(159.6deg) * 89 / 100), calc(80px * sin(159.6deg) * 89 / 100)) rotate(159.6deg);
+  }
+  12% {
+    transform: translate(calc(80px * cos(163.2deg) * 88 / 100), calc(80px * sin(163.2deg) * 88 / 100)) rotate(163.2deg);
+  }
+  13% {
+    transform: translate(calc(80px * cos(166.8deg) * 87 / 100), calc(80px * sin(166.8deg) * 87 / 100)) rotate(166.8deg);
+  }
+  14% {
+    transform: translate(calc(80px * cos(170.4deg) * 86 / 100), calc(80px * sin(170.4deg) * 86 / 100)) rotate(170.4deg);
+  }
+  15% {
+    transform: translate(calc(80px * cos(174deg) * 85 / 100), calc(80px * sin(174deg) * 85 / 100)) rotate(174deg);
+  }
+  16% {
+    transform: translate(calc(80px * cos(177.6deg) * 84 / 100), calc(80px * sin(177.6deg) * 84 / 100)) rotate(177.6deg);
+  }
+  17% {
+    transform: translate(calc(80px * cos(181.2deg) * 83 / 100), calc(80px * sin(181.2deg) * 83 / 100)) rotate(181.2deg);
+  }
+  18% {
+    transform: translate(calc(80px * cos(184.8deg) * 82 / 100), calc(80px * sin(184.8deg) * 82 / 100)) rotate(184.8deg);
+  }
+  19% {
+    transform: translate(calc(80px * cos(188.4deg) * 81 / 100), calc(80px * sin(188.4deg) * 81 / 100)) rotate(188.4deg);
+  }
+  20% {
+    transform: translate(calc(80px * cos(192deg) * 80 / 100), calc(80px * sin(192deg) * 80 / 100)) rotate(192deg);
+  }
+  21% {
+    transform: translate(calc(80px * cos(195.6deg) * 79 / 100), calc(80px * sin(195.6deg) * 79 / 100)) rotate(195.6deg);
+  }
+  22% {
+    transform: translate(calc(80px * cos(199.2deg) * 78 / 100), calc(80px * sin(199.2deg) * 78 / 100)) rotate(199.2deg);
+  }
+  23% {
+    transform: translate(calc(80px * cos(202.8deg) * 77 / 100), calc(80px * sin(202.8deg) * 77 / 100)) rotate(202.8deg);
+  }
+  24% {
+    transform: translate(calc(80px * cos(206.4deg) * 76 / 100), calc(80px * sin(206.4deg) * 76 / 100)) rotate(206.4deg);
+  }
+  25% {
+    transform: translate(calc(80px * cos(210deg) * 75 / 100), calc(80px * sin(210deg) * 75 / 100)) rotate(210deg);
+  }
+  26% {
+    transform: translate(calc(80px * cos(213.6deg) * 74 / 100), calc(80px * sin(213.6deg) * 74 / 100)) rotate(213.6deg);
+  }
+  27% {
+    transform: translate(calc(80px * cos(217.2deg) * 73 / 100), calc(80px * sin(217.2deg) * 73 / 100)) rotate(217.2deg);
+  }
+  28% {
+    transform: translate(calc(80px * cos(220.8deg) * 72 / 100), calc(80px * sin(220.8deg) * 72 / 100)) rotate(220.8deg);
+  }
+  29% {
+    transform: translate(calc(80px * cos(224.4deg) * 71 / 100), calc(80px * sin(224.4deg) * 71 / 100)) rotate(224.4deg);
+  }
+  30% {
+    transform: translate(calc(80px * cos(228deg) * 70 / 100), calc(80px * sin(228deg) * 70 / 100)) rotate(228deg);
+  }
+  31% {
+    transform: translate(calc(80px * cos(231.6deg) * 69 / 100), calc(80px * sin(231.6deg) * 69 / 100)) rotate(231.6deg);
+  }
+  32% {
+    transform: translate(calc(80px * cos(235.2deg) * 68 / 100), calc(80px * sin(235.2deg) * 68 / 100)) rotate(235.2deg);
+  }
+  33% {
+    transform: translate(calc(80px * cos(238.8deg) * 67 / 100), calc(80px * sin(238.8deg) * 67 / 100)) rotate(238.8deg);
+  }
+  34% {
+    transform: translate(calc(80px * cos(242.4deg) * 66 / 100), calc(80px * sin(242.4deg) * 66 / 100)) rotate(242.4deg);
+  }
+  35% {
+    transform: translate(calc(80px * cos(246deg) * 65 / 100), calc(80px * sin(246deg) * 65 / 100)) rotate(246deg);
+  }
+  36% {
+    transform: translate(calc(80px * cos(249.6deg) * 64 / 100), calc(80px * sin(249.6deg) * 64 / 100)) rotate(249.6deg);
+  }
+  37% {
+    transform: translate(calc(80px * cos(253.2deg) * 63 / 100), calc(80px * sin(253.2deg) * 63 / 100)) rotate(253.2deg);
+  }
+  38% {
+    transform: translate(calc(80px * cos(256.8deg) * 62 / 100), calc(80px * sin(256.8deg) * 62 / 100)) rotate(256.8deg);
+  }
+  39% {
+    transform: translate(calc(80px * cos(260.4deg) * 61 / 100), calc(80px * sin(260.4deg) * 61 / 100)) rotate(260.4deg);
+  }
+  40% {
+    transform: translate(calc(80px * cos(264deg) * 60 / 100), calc(80px * sin(264deg) * 60 / 100)) rotate(264deg);
+  }
+  41% {
+    transform: translate(calc(80px * cos(267.6deg) * 59 / 100), calc(80px * sin(267.6deg) * 59 / 100)) rotate(267.6deg);
+  }
+  42% {
+    transform: translate(calc(80px * cos(271.2deg) * 58 / 100), calc(80px * sin(271.2deg) * 58 / 100)) rotate(271.2deg);
+  }
+  43% {
+    transform: translate(calc(80px * cos(274.8deg) * 57 / 100), calc(80px * sin(274.8deg) * 57 / 100)) rotate(274.8deg);
+  }
+  44% {
+    transform: translate(calc(80px * cos(278.4deg) * 56 / 100), calc(80px * sin(278.4deg) * 56 / 100)) rotate(278.4deg);
+  }
+  45% {
+    transform: translate(calc(80px * cos(282deg) * 55 / 100), calc(80px * sin(282deg) * 55 / 100)) rotate(282deg);
+  }
+  46% {
+    transform: translate(calc(80px * cos(285.6deg) * 54 / 100), calc(80px * sin(285.6deg) * 54 / 100)) rotate(285.6deg);
+  }
+  47% {
+    transform: translate(calc(80px * cos(289.2deg) * 53 / 100), calc(80px * sin(289.2deg) * 53 / 100)) rotate(289.2deg);
+  }
+  48% {
+    transform: translate(calc(80px * cos(292.8deg) * 52 / 100), calc(80px * sin(292.8deg) * 52 / 100)) rotate(292.8deg);
+  }
+  49% {
+    transform: translate(calc(80px * cos(296.4deg) * 51 / 100), calc(80px * sin(296.4deg) * 51 / 100)) rotate(296.4deg);
+  }
+  50% {
+    transform: translate(calc(80px * cos(300deg) * 50 / 100), calc(80px * sin(300deg) * 50 / 100)) rotate(300deg);
+  }
+  51% {
+    transform: translate(calc(80px * cos(303.6deg) * 49 / 100), calc(80px * sin(303.6deg) * 49 / 100)) rotate(303.6deg);
+  }
+  52% {
+    transform: translate(calc(80px * cos(307.2deg) * 48 / 100), calc(80px * sin(307.2deg) * 48 / 100)) rotate(307.2deg);
+  }
+  53% {
+    transform: translate(calc(80px * cos(310.8deg) * 47 / 100), calc(80px * sin(310.8deg) * 47 / 100)) rotate(310.8deg);
+  }
+  54% {
+    transform: translate(calc(80px * cos(314.4deg) * 46 / 100), calc(80px * sin(314.4deg) * 46 / 100)) rotate(314.4deg);
+  }
+  55% {
+    transform: translate(calc(80px * cos(318deg) * 45 / 100), calc(80px * sin(318deg) * 45 / 100)) rotate(318deg);
+  }
+  56% {
+    transform: translate(calc(80px * cos(321.6deg) * 44 / 100), calc(80px * sin(321.6deg) * 44 / 100)) rotate(321.6deg);
+  }
+  57% {
+    transform: translate(calc(80px * cos(325.2deg) * 43 / 100), calc(80px * sin(325.2deg) * 43 / 100)) rotate(325.2deg);
+  }
+  58% {
+    transform: translate(calc(80px * cos(328.8deg) * 42 / 100), calc(80px * sin(328.8deg) * 42 / 100)) rotate(328.8deg);
+  }
+  59% {
+    transform: translate(calc(80px * cos(332.4deg) * 41 / 100), calc(80px * sin(332.4deg) * 41 / 100)) rotate(332.4deg);
+  }
+  60% {
+    transform: translate(calc(80px * cos(336deg) * 40 / 100), calc(80px * sin(336deg) * 40 / 100)) rotate(336deg);
+  }
+  61% {
+    transform: translate(calc(80px * cos(339.6deg) * 39 / 100), calc(80px * sin(339.6deg) * 39 / 100)) rotate(339.6deg);
+  }
+  62% {
+    transform: translate(calc(80px * cos(343.2deg) * 38 / 100), calc(80px * sin(343.2deg) * 38 / 100)) rotate(343.2deg);
+  }
+  63% {
+    transform: translate(calc(80px * cos(346.8deg) * 37 / 100), calc(80px * sin(346.8deg) * 37 / 100)) rotate(346.8deg);
+  }
+  64% {
+    transform: translate(calc(80px * cos(350.4deg) * 36 / 100), calc(80px * sin(350.4deg) * 36 / 100)) rotate(350.4deg);
+  }
+  65% {
+    transform: translate(calc(80px * cos(354deg) * 35 / 100), calc(80px * sin(354deg) * 35 / 100)) rotate(354deg);
+  }
+  66% {
+    transform: translate(calc(80px * cos(357.6deg) * 34 / 100), calc(80px * sin(357.6deg) * 34 / 100)) rotate(357.6deg);
+  }
+  67% {
+    transform: translate(calc(80px * cos(361.2deg) * 33 / 100), calc(80px * sin(361.2deg) * 33 / 100)) rotate(361.2deg);
+  }
+  68% {
+    transform: translate(calc(80px * cos(364.8deg) * 32 / 100), calc(80px * sin(364.8deg) * 32 / 100)) rotate(364.8deg);
+  }
+  69% {
+    transform: translate(calc(80px * cos(368.4deg) * 31 / 100), calc(80px * sin(368.4deg) * 31 / 100)) rotate(368.4deg);
+  }
+  70% {
+    transform: translate(calc(80px * cos(372deg) * 30 / 100), calc(80px * sin(372deg) * 30 / 100)) rotate(372deg);
+  }
+  71% {
+    transform: translate(calc(80px * cos(375.6deg) * 29 / 100), calc(80px * sin(375.6deg) * 29 / 100)) rotate(375.6deg);
+  }
+  72% {
+    transform: translate(calc(80px * cos(379.2deg) * 28 / 100), calc(80px * sin(379.2deg) * 28 / 100)) rotate(379.2deg);
+  }
+  73% {
+    transform: translate(calc(80px * cos(382.8deg) * 27 / 100), calc(80px * sin(382.8deg) * 27 / 100)) rotate(382.8deg);
+  }
+  74% {
+    transform: translate(calc(80px * cos(386.4deg) * 26 / 100), calc(80px * sin(386.4deg) * 26 / 100)) rotate(386.4deg);
+  }
+  75% {
+    transform: translate(calc(80px * cos(390deg) * 25 / 100), calc(80px * sin(390deg) * 25 / 100)) rotate(390deg);
+  }
+  76% {
+    transform: translate(calc(80px * cos(393.6deg) * 24 / 100), calc(80px * sin(393.6deg) * 24 / 100)) rotate(393.6deg);
+  }
+  77% {
+    transform: translate(calc(80px * cos(397.2deg) * 23 / 100), calc(80px * sin(397.2deg) * 23 / 100)) rotate(397.2deg);
+  }
+  78% {
+    transform: translate(calc(80px * cos(400.8deg) * 22 / 100), calc(80px * sin(400.8deg) * 22 / 100)) rotate(400.8deg);
+  }
+  79% {
+    transform: translate(calc(80px * cos(404.4deg) * 21 / 100), calc(80px * sin(404.4deg) * 21 / 100)) rotate(404.4deg);
+  }
+  80% {
+    transform: translate(calc(80px * cos(408deg) * 20 / 100), calc(80px * sin(408deg) * 20 / 100)) rotate(408deg);
+  }
+  81% {
+    transform: translate(calc(80px * cos(411.6deg) * 19 / 100), calc(80px * sin(411.6deg) * 19 / 100)) rotate(411.6deg);
+  }
+  82% {
+    transform: translate(calc(80px * cos(415.2deg) * 18 / 100), calc(80px * sin(415.2deg) * 18 / 100)) rotate(415.2deg);
+  }
+  83% {
+    transform: translate(calc(80px * cos(418.8deg) * 17 / 100), calc(80px * sin(418.8deg) * 17 / 100)) rotate(418.8deg);
+  }
+  84% {
+    transform: translate(calc(80px * cos(422.4deg) * 16 / 100), calc(80px * sin(422.4deg) * 16 / 100)) rotate(422.4deg);
+  }
+  85% {
+    transform: translate(calc(80px * cos(426deg) * 15 / 100), calc(80px * sin(426deg) * 15 / 100)) rotate(426deg);
+  }
+  86% {
+    transform: translate(calc(80px * cos(429.6deg) * 14 / 100), calc(80px * sin(429.6deg) * 14 / 100)) rotate(429.6deg);
+  }
+  87% {
+    transform: translate(calc(80px * cos(433.2deg) * 13 / 100), calc(80px * sin(433.2deg) * 13 / 100)) rotate(433.2deg);
+  }
+  88% {
+    transform: translate(calc(80px * cos(436.8deg) * 12 / 100), calc(80px * sin(436.8deg) * 12 / 100)) rotate(436.8deg);
+  }
+  89% {
+    transform: translate(calc(80px * cos(440.4deg) * 11 / 100), calc(80px * sin(440.4deg) * 11 / 100)) rotate(440.4deg);
+  }
+  90% {
+    transform: translate(calc(80px * cos(444deg) * 10 / 100), calc(80px * sin(444deg) * 10 / 100)) rotate(444deg);
+  }
+  91% {
+    transform: translate(calc(80px * cos(447.6deg) * 9 / 100), calc(80px * sin(447.6deg) * 9 / 100)) rotate(447.6deg);
+  }
+  92% {
+    transform: translate(calc(80px * cos(451.2deg) * 8 / 100), calc(80px * sin(451.2deg) * 8 / 100)) rotate(451.2deg);
+  }
+  93% {
+    transform: translate(calc(80px * cos(454.8deg) * 7 / 100), calc(80px * sin(454.8deg) * 7 / 100)) rotate(454.8deg);
+  }
+  94% {
+    transform: translate(calc(80px * cos(458.4deg) * 6 / 100), calc(80px * sin(458.4deg) * 6 / 100)) rotate(458.4deg);
+  }
+  95% {
+    transform: translate(calc(80px * cos(462deg) * 5 / 100), calc(80px * sin(462deg) * 5 / 100)) rotate(462deg);
+  }
+  96% {
+    transform: translate(calc(80px * cos(465.6deg) * 4 / 100), calc(80px * sin(465.6deg) * 4 / 100)) rotate(465.6deg);
+  }
+  97% {
+    transform: translate(calc(80px * cos(469.2deg) * 3 / 100), calc(80px * sin(469.2deg) * 3 / 100)) rotate(469.2deg);
+  }
+  98% {
+    transform: translate(calc(80px * cos(472.8deg) * 2 / 100), calc(80px * sin(472.8deg) * 2 / 100)) rotate(472.8deg);
+  }
+  99% {
+    transform: translate(calc(80px * cos(476.4deg) * 1 / 100), calc(80px * sin(476.4deg) * 1 / 100)) rotate(476.4deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0);
+  }
+}
+.circle:nth-child(2) {
+  animation: orbit2 1s linear, circle-hide 0.3s linear 1s forwards;
+}
+
+@keyframes orbit2 {
+  0% {
+    transform: translate(calc(80px * cos(240deg) * 100 / 100), calc(80px * sin(240deg) * 100 / 100)) rotate(240deg);
+  }
+  1% {
+    transform: translate(calc(80px * cos(243.6deg) * 99 / 100), calc(80px * sin(243.6deg) * 99 / 100)) rotate(243.6deg);
+  }
+  2% {
+    transform: translate(calc(80px * cos(247.2deg) * 98 / 100), calc(80px * sin(247.2deg) * 98 / 100)) rotate(247.2deg);
+  }
+  3% {
+    transform: translate(calc(80px * cos(250.8deg) * 97 / 100), calc(80px * sin(250.8deg) * 97 / 100)) rotate(250.8deg);
+  }
+  4% {
+    transform: translate(calc(80px * cos(254.4deg) * 96 / 100), calc(80px * sin(254.4deg) * 96 / 100)) rotate(254.4deg);
+  }
+  5% {
+    transform: translate(calc(80px * cos(258deg) * 95 / 100), calc(80px * sin(258deg) * 95 / 100)) rotate(258deg);
+  }
+  6% {
+    transform: translate(calc(80px * cos(261.6deg) * 94 / 100), calc(80px * sin(261.6deg) * 94 / 100)) rotate(261.6deg);
+  }
+  7% {
+    transform: translate(calc(80px * cos(265.2deg) * 93 / 100), calc(80px * sin(265.2deg) * 93 / 100)) rotate(265.2deg);
+  }
+  8% {
+    transform: translate(calc(80px * cos(268.8deg) * 92 / 100), calc(80px * sin(268.8deg) * 92 / 100)) rotate(268.8deg);
+  }
+  9% {
+    transform: translate(calc(80px * cos(272.4deg) * 91 / 100), calc(80px * sin(272.4deg) * 91 / 100)) rotate(272.4deg);
+  }
+  10% {
+    transform: translate(calc(80px * cos(276deg) * 90 / 100), calc(80px * sin(276deg) * 90 / 100)) rotate(276deg);
+  }
+  11% {
+    transform: translate(calc(80px * cos(279.6deg) * 89 / 100), calc(80px * sin(279.6deg) * 89 / 100)) rotate(279.6deg);
+  }
+  12% {
+    transform: translate(calc(80px * cos(283.2deg) * 88 / 100), calc(80px * sin(283.2deg) * 88 / 100)) rotate(283.2deg);
+  }
+  13% {
+    transform: translate(calc(80px * cos(286.8deg) * 87 / 100), calc(80px * sin(286.8deg) * 87 / 100)) rotate(286.8deg);
+  }
+  14% {
+    transform: translate(calc(80px * cos(290.4deg) * 86 / 100), calc(80px * sin(290.4deg) * 86 / 100)) rotate(290.4deg);
+  }
+  15% {
+    transform: translate(calc(80px * cos(294deg) * 85 / 100), calc(80px * sin(294deg) * 85 / 100)) rotate(294deg);
+  }
+  16% {
+    transform: translate(calc(80px * cos(297.6deg) * 84 / 100), calc(80px * sin(297.6deg) * 84 / 100)) rotate(297.6deg);
+  }
+  17% {
+    transform: translate(calc(80px * cos(301.2deg) * 83 / 100), calc(80px * sin(301.2deg) * 83 / 100)) rotate(301.2deg);
+  }
+  18% {
+    transform: translate(calc(80px * cos(304.8deg) * 82 / 100), calc(80px * sin(304.8deg) * 82 / 100)) rotate(304.8deg);
+  }
+  19% {
+    transform: translate(calc(80px * cos(308.4deg) * 81 / 100), calc(80px * sin(308.4deg) * 81 / 100)) rotate(308.4deg);
+  }
+  20% {
+    transform: translate(calc(80px * cos(312deg) * 80 / 100), calc(80px * sin(312deg) * 80 / 100)) rotate(312deg);
+  }
+  21% {
+    transform: translate(calc(80px * cos(315.6deg) * 79 / 100), calc(80px * sin(315.6deg) * 79 / 100)) rotate(315.6deg);
+  }
+  22% {
+    transform: translate(calc(80px * cos(319.2deg) * 78 / 100), calc(80px * sin(319.2deg) * 78 / 100)) rotate(319.2deg);
+  }
+  23% {
+    transform: translate(calc(80px * cos(322.8deg) * 77 / 100), calc(80px * sin(322.8deg) * 77 / 100)) rotate(322.8deg);
+  }
+  24% {
+    transform: translate(calc(80px * cos(326.4deg) * 76 / 100), calc(80px * sin(326.4deg) * 76 / 100)) rotate(326.4deg);
+  }
+  25% {
+    transform: translate(calc(80px * cos(330deg) * 75 / 100), calc(80px * sin(330deg) * 75 / 100)) rotate(330deg);
+  }
+  26% {
+    transform: translate(calc(80px * cos(333.6deg) * 74 / 100), calc(80px * sin(333.6deg) * 74 / 100)) rotate(333.6deg);
+  }
+  27% {
+    transform: translate(calc(80px * cos(337.2deg) * 73 / 100), calc(80px * sin(337.2deg) * 73 / 100)) rotate(337.2deg);
+  }
+  28% {
+    transform: translate(calc(80px * cos(340.8deg) * 72 / 100), calc(80px * sin(340.8deg) * 72 / 100)) rotate(340.8deg);
+  }
+  29% {
+    transform: translate(calc(80px * cos(344.4deg) * 71 / 100), calc(80px * sin(344.4deg) * 71 / 100)) rotate(344.4deg);
+  }
+  30% {
+    transform: translate(calc(80px * cos(348deg) * 70 / 100), calc(80px * sin(348deg) * 70 / 100)) rotate(348deg);
+  }
+  31% {
+    transform: translate(calc(80px * cos(351.6deg) * 69 / 100), calc(80px * sin(351.6deg) * 69 / 100)) rotate(351.6deg);
+  }
+  32% {
+    transform: translate(calc(80px * cos(355.2deg) * 68 / 100), calc(80px * sin(355.2deg) * 68 / 100)) rotate(355.2deg);
+  }
+  33% {
+    transform: translate(calc(80px * cos(358.8deg) * 67 / 100), calc(80px * sin(358.8deg) * 67 / 100)) rotate(358.8deg);
+  }
+  34% {
+    transform: translate(calc(80px * cos(362.4deg) * 66 / 100), calc(80px * sin(362.4deg) * 66 / 100)) rotate(362.4deg);
+  }
+  35% {
+    transform: translate(calc(80px * cos(366deg) * 65 / 100), calc(80px * sin(366deg) * 65 / 100)) rotate(366deg);
+  }
+  36% {
+    transform: translate(calc(80px * cos(369.6deg) * 64 / 100), calc(80px * sin(369.6deg) * 64 / 100)) rotate(369.6deg);
+  }
+  37% {
+    transform: translate(calc(80px * cos(373.2deg) * 63 / 100), calc(80px * sin(373.2deg) * 63 / 100)) rotate(373.2deg);
+  }
+  38% {
+    transform: translate(calc(80px * cos(376.8deg) * 62 / 100), calc(80px * sin(376.8deg) * 62 / 100)) rotate(376.8deg);
+  }
+  39% {
+    transform: translate(calc(80px * cos(380.4deg) * 61 / 100), calc(80px * sin(380.4deg) * 61 / 100)) rotate(380.4deg);
+  }
+  40% {
+    transform: translate(calc(80px * cos(384deg) * 60 / 100), calc(80px * sin(384deg) * 60 / 100)) rotate(384deg);
+  }
+  41% {
+    transform: translate(calc(80px * cos(387.6deg) * 59 / 100), calc(80px * sin(387.6deg) * 59 / 100)) rotate(387.6deg);
+  }
+  42% {
+    transform: translate(calc(80px * cos(391.2deg) * 58 / 100), calc(80px * sin(391.2deg) * 58 / 100)) rotate(391.2deg);
+  }
+  43% {
+    transform: translate(calc(80px * cos(394.8deg) * 57 / 100), calc(80px * sin(394.8deg) * 57 / 100)) rotate(394.8deg);
+  }
+  44% {
+    transform: translate(calc(80px * cos(398.4deg) * 56 / 100), calc(80px * sin(398.4deg) * 56 / 100)) rotate(398.4deg);
+  }
+  45% {
+    transform: translate(calc(80px * cos(402deg) * 55 / 100), calc(80px * sin(402deg) * 55 / 100)) rotate(402deg);
+  }
+  46% {
+    transform: translate(calc(80px * cos(405.6deg) * 54 / 100), calc(80px * sin(405.6deg) * 54 / 100)) rotate(405.6deg);
+  }
+  47% {
+    transform: translate(calc(80px * cos(409.2deg) * 53 / 100), calc(80px * sin(409.2deg) * 53 / 100)) rotate(409.2deg);
+  }
+  48% {
+    transform: translate(calc(80px * cos(412.8deg) * 52 / 100), calc(80px * sin(412.8deg) * 52 / 100)) rotate(412.8deg);
+  }
+  49% {
+    transform: translate(calc(80px * cos(416.4deg) * 51 / 100), calc(80px * sin(416.4deg) * 51 / 100)) rotate(416.4deg);
+  }
+  50% {
+    transform: translate(calc(80px * cos(420deg) * 50 / 100), calc(80px * sin(420deg) * 50 / 100)) rotate(420deg);
+  }
+  51% {
+    transform: translate(calc(80px * cos(423.6deg) * 49 / 100), calc(80px * sin(423.6deg) * 49 / 100)) rotate(423.6deg);
+  }
+  52% {
+    transform: translate(calc(80px * cos(427.2deg) * 48 / 100), calc(80px * sin(427.2deg) * 48 / 100)) rotate(427.2deg);
+  }
+  53% {
+    transform: translate(calc(80px * cos(430.8deg) * 47 / 100), calc(80px * sin(430.8deg) * 47 / 100)) rotate(430.8deg);
+  }
+  54% {
+    transform: translate(calc(80px * cos(434.4deg) * 46 / 100), calc(80px * sin(434.4deg) * 46 / 100)) rotate(434.4deg);
+  }
+  55% {
+    transform: translate(calc(80px * cos(438deg) * 45 / 100), calc(80px * sin(438deg) * 45 / 100)) rotate(438deg);
+  }
+  56% {
+    transform: translate(calc(80px * cos(441.6deg) * 44 / 100), calc(80px * sin(441.6deg) * 44 / 100)) rotate(441.6deg);
+  }
+  57% {
+    transform: translate(calc(80px * cos(445.2deg) * 43 / 100), calc(80px * sin(445.2deg) * 43 / 100)) rotate(445.2deg);
+  }
+  58% {
+    transform: translate(calc(80px * cos(448.8deg) * 42 / 100), calc(80px * sin(448.8deg) * 42 / 100)) rotate(448.8deg);
+  }
+  59% {
+    transform: translate(calc(80px * cos(452.4deg) * 41 / 100), calc(80px * sin(452.4deg) * 41 / 100)) rotate(452.4deg);
+  }
+  60% {
+    transform: translate(calc(80px * cos(456deg) * 40 / 100), calc(80px * sin(456deg) * 40 / 100)) rotate(456deg);
+  }
+  61% {
+    transform: translate(calc(80px * cos(459.6deg) * 39 / 100), calc(80px * sin(459.6deg) * 39 / 100)) rotate(459.6deg);
+  }
+  62% {
+    transform: translate(calc(80px * cos(463.2deg) * 38 / 100), calc(80px * sin(463.2deg) * 38 / 100)) rotate(463.2deg);
+  }
+  63% {
+    transform: translate(calc(80px * cos(466.8deg) * 37 / 100), calc(80px * sin(466.8deg) * 37 / 100)) rotate(466.8deg);
+  }
+  64% {
+    transform: translate(calc(80px * cos(470.4deg) * 36 / 100), calc(80px * sin(470.4deg) * 36 / 100)) rotate(470.4deg);
+  }
+  65% {
+    transform: translate(calc(80px * cos(474deg) * 35 / 100), calc(80px * sin(474deg) * 35 / 100)) rotate(474deg);
+  }
+  66% {
+    transform: translate(calc(80px * cos(477.6deg) * 34 / 100), calc(80px * sin(477.6deg) * 34 / 100)) rotate(477.6deg);
+  }
+  67% {
+    transform: translate(calc(80px * cos(481.2deg) * 33 / 100), calc(80px * sin(481.2deg) * 33 / 100)) rotate(481.2deg);
+  }
+  68% {
+    transform: translate(calc(80px * cos(484.8deg) * 32 / 100), calc(80px * sin(484.8deg) * 32 / 100)) rotate(484.8deg);
+  }
+  69% {
+    transform: translate(calc(80px * cos(488.4deg) * 31 / 100), calc(80px * sin(488.4deg) * 31 / 100)) rotate(488.4deg);
+  }
+  70% {
+    transform: translate(calc(80px * cos(492deg) * 30 / 100), calc(80px * sin(492deg) * 30 / 100)) rotate(492deg);
+  }
+  71% {
+    transform: translate(calc(80px * cos(495.6deg) * 29 / 100), calc(80px * sin(495.6deg) * 29 / 100)) rotate(495.6deg);
+  }
+  72% {
+    transform: translate(calc(80px * cos(499.2deg) * 28 / 100), calc(80px * sin(499.2deg) * 28 / 100)) rotate(499.2deg);
+  }
+  73% {
+    transform: translate(calc(80px * cos(502.8deg) * 27 / 100), calc(80px * sin(502.8deg) * 27 / 100)) rotate(502.8deg);
+  }
+  74% {
+    transform: translate(calc(80px * cos(506.4deg) * 26 / 100), calc(80px * sin(506.4deg) * 26 / 100)) rotate(506.4deg);
+  }
+  75% {
+    transform: translate(calc(80px * cos(510deg) * 25 / 100), calc(80px * sin(510deg) * 25 / 100)) rotate(510deg);
+  }
+  76% {
+    transform: translate(calc(80px * cos(513.6deg) * 24 / 100), calc(80px * sin(513.6deg) * 24 / 100)) rotate(513.6deg);
+  }
+  77% {
+    transform: translate(calc(80px * cos(517.2deg) * 23 / 100), calc(80px * sin(517.2deg) * 23 / 100)) rotate(517.2deg);
+  }
+  78% {
+    transform: translate(calc(80px * cos(520.8deg) * 22 / 100), calc(80px * sin(520.8deg) * 22 / 100)) rotate(520.8deg);
+  }
+  79% {
+    transform: translate(calc(80px * cos(524.4deg) * 21 / 100), calc(80px * sin(524.4deg) * 21 / 100)) rotate(524.4deg);
+  }
+  80% {
+    transform: translate(calc(80px * cos(528deg) * 20 / 100), calc(80px * sin(528deg) * 20 / 100)) rotate(528deg);
+  }
+  81% {
+    transform: translate(calc(80px * cos(531.6deg) * 19 / 100), calc(80px * sin(531.6deg) * 19 / 100)) rotate(531.6deg);
+  }
+  82% {
+    transform: translate(calc(80px * cos(535.2deg) * 18 / 100), calc(80px * sin(535.2deg) * 18 / 100)) rotate(535.2deg);
+  }
+  83% {
+    transform: translate(calc(80px * cos(538.8deg) * 17 / 100), calc(80px * sin(538.8deg) * 17 / 100)) rotate(538.8deg);
+  }
+  84% {
+    transform: translate(calc(80px * cos(542.4deg) * 16 / 100), calc(80px * sin(542.4deg) * 16 / 100)) rotate(542.4deg);
+  }
+  85% {
+    transform: translate(calc(80px * cos(546deg) * 15 / 100), calc(80px * sin(546deg) * 15 / 100)) rotate(546deg);
+  }
+  86% {
+    transform: translate(calc(80px * cos(549.6deg) * 14 / 100), calc(80px * sin(549.6deg) * 14 / 100)) rotate(549.6deg);
+  }
+  87% {
+    transform: translate(calc(80px * cos(553.2deg) * 13 / 100), calc(80px * sin(553.2deg) * 13 / 100)) rotate(553.2deg);
+  }
+  88% {
+    transform: translate(calc(80px * cos(556.8deg) * 12 / 100), calc(80px * sin(556.8deg) * 12 / 100)) rotate(556.8deg);
+  }
+  89% {
+    transform: translate(calc(80px * cos(560.4deg) * 11 / 100), calc(80px * sin(560.4deg) * 11 / 100)) rotate(560.4deg);
+  }
+  90% {
+    transform: translate(calc(80px * cos(564deg) * 10 / 100), calc(80px * sin(564deg) * 10 / 100)) rotate(564deg);
+  }
+  91% {
+    transform: translate(calc(80px * cos(567.6deg) * 9 / 100), calc(80px * sin(567.6deg) * 9 / 100)) rotate(567.6deg);
+  }
+  92% {
+    transform: translate(calc(80px * cos(571.2deg) * 8 / 100), calc(80px * sin(571.2deg) * 8 / 100)) rotate(571.2deg);
+  }
+  93% {
+    transform: translate(calc(80px * cos(574.8deg) * 7 / 100), calc(80px * sin(574.8deg) * 7 / 100)) rotate(574.8deg);
+  }
+  94% {
+    transform: translate(calc(80px * cos(578.4deg) * 6 / 100), calc(80px * sin(578.4deg) * 6 / 100)) rotate(578.4deg);
+  }
+  95% {
+    transform: translate(calc(80px * cos(582deg) * 5 / 100), calc(80px * sin(582deg) * 5 / 100)) rotate(582deg);
+  }
+  96% {
+    transform: translate(calc(80px * cos(585.6deg) * 4 / 100), calc(80px * sin(585.6deg) * 4 / 100)) rotate(585.6deg);
+  }
+  97% {
+    transform: translate(calc(80px * cos(589.2deg) * 3 / 100), calc(80px * sin(589.2deg) * 3 / 100)) rotate(589.2deg);
+  }
+  98% {
+    transform: translate(calc(80px * cos(592.8deg) * 2 / 100), calc(80px * sin(592.8deg) * 2 / 100)) rotate(592.8deg);
+  }
+  99% {
+    transform: translate(calc(80px * cos(596.4deg) * 1 / 100), calc(80px * sin(596.4deg) * 1 / 100)) rotate(596.4deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0);
+  }
+}
+.circle:nth-child(3) {
+  animation: orbit3 1s linear, circle-hide 0.3s linear 1s forwards;
+}
+
+@keyframes orbit3 {
+  0% {
+    transform: translate(calc(80px * cos(360deg) * 100 / 100), calc(80px * sin(360deg) * 100 / 100)) rotate(360deg);
+  }
+  1% {
+    transform: translate(calc(80px * cos(363.6deg) * 99 / 100), calc(80px * sin(363.6deg) * 99 / 100)) rotate(363.6deg);
+  }
+  2% {
+    transform: translate(calc(80px * cos(367.2deg) * 98 / 100), calc(80px * sin(367.2deg) * 98 / 100)) rotate(367.2deg);
+  }
+  3% {
+    transform: translate(calc(80px * cos(370.8deg) * 97 / 100), calc(80px * sin(370.8deg) * 97 / 100)) rotate(370.8deg);
+  }
+  4% {
+    transform: translate(calc(80px * cos(374.4deg) * 96 / 100), calc(80px * sin(374.4deg) * 96 / 100)) rotate(374.4deg);
+  }
+  5% {
+    transform: translate(calc(80px * cos(378deg) * 95 / 100), calc(80px * sin(378deg) * 95 / 100)) rotate(378deg);
+  }
+  6% {
+    transform: translate(calc(80px * cos(381.6deg) * 94 / 100), calc(80px * sin(381.6deg) * 94 / 100)) rotate(381.6deg);
+  }
+  7% {
+    transform: translate(calc(80px * cos(385.2deg) * 93 / 100), calc(80px * sin(385.2deg) * 93 / 100)) rotate(385.2deg);
+  }
+  8% {
+    transform: translate(calc(80px * cos(388.8deg) * 92 / 100), calc(80px * sin(388.8deg) * 92 / 100)) rotate(388.8deg);
+  }
+  9% {
+    transform: translate(calc(80px * cos(392.4deg) * 91 / 100), calc(80px * sin(392.4deg) * 91 / 100)) rotate(392.4deg);
+  }
+  10% {
+    transform: translate(calc(80px * cos(396deg) * 90 / 100), calc(80px * sin(396deg) * 90 / 100)) rotate(396deg);
+  }
+  11% {
+    transform: translate(calc(80px * cos(399.6deg) * 89 / 100), calc(80px * sin(399.6deg) * 89 / 100)) rotate(399.6deg);
+  }
+  12% {
+    transform: translate(calc(80px * cos(403.2deg) * 88 / 100), calc(80px * sin(403.2deg) * 88 / 100)) rotate(403.2deg);
+  }
+  13% {
+    transform: translate(calc(80px * cos(406.8deg) * 87 / 100), calc(80px * sin(406.8deg) * 87 / 100)) rotate(406.8deg);
+  }
+  14% {
+    transform: translate(calc(80px * cos(410.4deg) * 86 / 100), calc(80px * sin(410.4deg) * 86 / 100)) rotate(410.4deg);
+  }
+  15% {
+    transform: translate(calc(80px * cos(414deg) * 85 / 100), calc(80px * sin(414deg) * 85 / 100)) rotate(414deg);
+  }
+  16% {
+    transform: translate(calc(80px * cos(417.6deg) * 84 / 100), calc(80px * sin(417.6deg) * 84 / 100)) rotate(417.6deg);
+  }
+  17% {
+    transform: translate(calc(80px * cos(421.2deg) * 83 / 100), calc(80px * sin(421.2deg) * 83 / 100)) rotate(421.2deg);
+  }
+  18% {
+    transform: translate(calc(80px * cos(424.8deg) * 82 / 100), calc(80px * sin(424.8deg) * 82 / 100)) rotate(424.8deg);
+  }
+  19% {
+    transform: translate(calc(80px * cos(428.4deg) * 81 / 100), calc(80px * sin(428.4deg) * 81 / 100)) rotate(428.4deg);
+  }
+  20% {
+    transform: translate(calc(80px * cos(432deg) * 80 / 100), calc(80px * sin(432deg) * 80 / 100)) rotate(432deg);
+  }
+  21% {
+    transform: translate(calc(80px * cos(435.6deg) * 79 / 100), calc(80px * sin(435.6deg) * 79 / 100)) rotate(435.6deg);
+  }
+  22% {
+    transform: translate(calc(80px * cos(439.2deg) * 78 / 100), calc(80px * sin(439.2deg) * 78 / 100)) rotate(439.2deg);
+  }
+  23% {
+    transform: translate(calc(80px * cos(442.8deg) * 77 / 100), calc(80px * sin(442.8deg) * 77 / 100)) rotate(442.8deg);
+  }
+  24% {
+    transform: translate(calc(80px * cos(446.4deg) * 76 / 100), calc(80px * sin(446.4deg) * 76 / 100)) rotate(446.4deg);
+  }
+  25% {
+    transform: translate(calc(80px * cos(450deg) * 75 / 100), calc(80px * sin(450deg) * 75 / 100)) rotate(450deg);
+  }
+  26% {
+    transform: translate(calc(80px * cos(453.6deg) * 74 / 100), calc(80px * sin(453.6deg) * 74 / 100)) rotate(453.6deg);
+  }
+  27% {
+    transform: translate(calc(80px * cos(457.2deg) * 73 / 100), calc(80px * sin(457.2deg) * 73 / 100)) rotate(457.2deg);
+  }
+  28% {
+    transform: translate(calc(80px * cos(460.8deg) * 72 / 100), calc(80px * sin(460.8deg) * 72 / 100)) rotate(460.8deg);
+  }
+  29% {
+    transform: translate(calc(80px * cos(464.4deg) * 71 / 100), calc(80px * sin(464.4deg) * 71 / 100)) rotate(464.4deg);
+  }
+  30% {
+    transform: translate(calc(80px * cos(468deg) * 70 / 100), calc(80px * sin(468deg) * 70 / 100)) rotate(468deg);
+  }
+  31% {
+    transform: translate(calc(80px * cos(471.6deg) * 69 / 100), calc(80px * sin(471.6deg) * 69 / 100)) rotate(471.6deg);
+  }
+  32% {
+    transform: translate(calc(80px * cos(475.2deg) * 68 / 100), calc(80px * sin(475.2deg) * 68 / 100)) rotate(475.2deg);
+  }
+  33% {
+    transform: translate(calc(80px * cos(478.8deg) * 67 / 100), calc(80px * sin(478.8deg) * 67 / 100)) rotate(478.8deg);
+  }
+  34% {
+    transform: translate(calc(80px * cos(482.4deg) * 66 / 100), calc(80px * sin(482.4deg) * 66 / 100)) rotate(482.4deg);
+  }
+  35% {
+    transform: translate(calc(80px * cos(486deg) * 65 / 100), calc(80px * sin(486deg) * 65 / 100)) rotate(486deg);
+  }
+  36% {
+    transform: translate(calc(80px * cos(489.6deg) * 64 / 100), calc(80px * sin(489.6deg) * 64 / 100)) rotate(489.6deg);
+  }
+  37% {
+    transform: translate(calc(80px * cos(493.2deg) * 63 / 100), calc(80px * sin(493.2deg) * 63 / 100)) rotate(493.2deg);
+  }
+  38% {
+    transform: translate(calc(80px * cos(496.8deg) * 62 / 100), calc(80px * sin(496.8deg) * 62 / 100)) rotate(496.8deg);
+  }
+  39% {
+    transform: translate(calc(80px * cos(500.4deg) * 61 / 100), calc(80px * sin(500.4deg) * 61 / 100)) rotate(500.4deg);
+  }
+  40% {
+    transform: translate(calc(80px * cos(504deg) * 60 / 100), calc(80px * sin(504deg) * 60 / 100)) rotate(504deg);
+  }
+  41% {
+    transform: translate(calc(80px * cos(507.6deg) * 59 / 100), calc(80px * sin(507.6deg) * 59 / 100)) rotate(507.6deg);
+  }
+  42% {
+    transform: translate(calc(80px * cos(511.2deg) * 58 / 100), calc(80px * sin(511.2deg) * 58 / 100)) rotate(511.2deg);
+  }
+  43% {
+    transform: translate(calc(80px * cos(514.8deg) * 57 / 100), calc(80px * sin(514.8deg) * 57 / 100)) rotate(514.8deg);
+  }
+  44% {
+    transform: translate(calc(80px * cos(518.4deg) * 56 / 100), calc(80px * sin(518.4deg) * 56 / 100)) rotate(518.4deg);
+  }
+  45% {
+    transform: translate(calc(80px * cos(522deg) * 55 / 100), calc(80px * sin(522deg) * 55 / 100)) rotate(522deg);
+  }
+  46% {
+    transform: translate(calc(80px * cos(525.6deg) * 54 / 100), calc(80px * sin(525.6deg) * 54 / 100)) rotate(525.6deg);
+  }
+  47% {
+    transform: translate(calc(80px * cos(529.2deg) * 53 / 100), calc(80px * sin(529.2deg) * 53 / 100)) rotate(529.2deg);
+  }
+  48% {
+    transform: translate(calc(80px * cos(532.8deg) * 52 / 100), calc(80px * sin(532.8deg) * 52 / 100)) rotate(532.8deg);
+  }
+  49% {
+    transform: translate(calc(80px * cos(536.4deg) * 51 / 100), calc(80px * sin(536.4deg) * 51 / 100)) rotate(536.4deg);
+  }
+  50% {
+    transform: translate(calc(80px * cos(540deg) * 50 / 100), calc(80px * sin(540deg) * 50 / 100)) rotate(540deg);
+  }
+  51% {
+    transform: translate(calc(80px * cos(543.6deg) * 49 / 100), calc(80px * sin(543.6deg) * 49 / 100)) rotate(543.6deg);
+  }
+  52% {
+    transform: translate(calc(80px * cos(547.2deg) * 48 / 100), calc(80px * sin(547.2deg) * 48 / 100)) rotate(547.2deg);
+  }
+  53% {
+    transform: translate(calc(80px * cos(550.8deg) * 47 / 100), calc(80px * sin(550.8deg) * 47 / 100)) rotate(550.8deg);
+  }
+  54% {
+    transform: translate(calc(80px * cos(554.4deg) * 46 / 100), calc(80px * sin(554.4deg) * 46 / 100)) rotate(554.4deg);
+  }
+  55% {
+    transform: translate(calc(80px * cos(558deg) * 45 / 100), calc(80px * sin(558deg) * 45 / 100)) rotate(558deg);
+  }
+  56% {
+    transform: translate(calc(80px * cos(561.6deg) * 44 / 100), calc(80px * sin(561.6deg) * 44 / 100)) rotate(561.6deg);
+  }
+  57% {
+    transform: translate(calc(80px * cos(565.2deg) * 43 / 100), calc(80px * sin(565.2deg) * 43 / 100)) rotate(565.2deg);
+  }
+  58% {
+    transform: translate(calc(80px * cos(568.8deg) * 42 / 100), calc(80px * sin(568.8deg) * 42 / 100)) rotate(568.8deg);
+  }
+  59% {
+    transform: translate(calc(80px * cos(572.4deg) * 41 / 100), calc(80px * sin(572.4deg) * 41 / 100)) rotate(572.4deg);
+  }
+  60% {
+    transform: translate(calc(80px * cos(576deg) * 40 / 100), calc(80px * sin(576deg) * 40 / 100)) rotate(576deg);
+  }
+  61% {
+    transform: translate(calc(80px * cos(579.6deg) * 39 / 100), calc(80px * sin(579.6deg) * 39 / 100)) rotate(579.6deg);
+  }
+  62% {
+    transform: translate(calc(80px * cos(583.2deg) * 38 / 100), calc(80px * sin(583.2deg) * 38 / 100)) rotate(583.2deg);
+  }
+  63% {
+    transform: translate(calc(80px * cos(586.8deg) * 37 / 100), calc(80px * sin(586.8deg) * 37 / 100)) rotate(586.8deg);
+  }
+  64% {
+    transform: translate(calc(80px * cos(590.4deg) * 36 / 100), calc(80px * sin(590.4deg) * 36 / 100)) rotate(590.4deg);
+  }
+  65% {
+    transform: translate(calc(80px * cos(594deg) * 35 / 100), calc(80px * sin(594deg) * 35 / 100)) rotate(594deg);
+  }
+  66% {
+    transform: translate(calc(80px * cos(597.6deg) * 34 / 100), calc(80px * sin(597.6deg) * 34 / 100)) rotate(597.6deg);
+  }
+  67% {
+    transform: translate(calc(80px * cos(601.2deg) * 33 / 100), calc(80px * sin(601.2deg) * 33 / 100)) rotate(601.2deg);
+  }
+  68% {
+    transform: translate(calc(80px * cos(604.8deg) * 32 / 100), calc(80px * sin(604.8deg) * 32 / 100)) rotate(604.8deg);
+  }
+  69% {
+    transform: translate(calc(80px * cos(608.4deg) * 31 / 100), calc(80px * sin(608.4deg) * 31 / 100)) rotate(608.4deg);
+  }
+  70% {
+    transform: translate(calc(80px * cos(612deg) * 30 / 100), calc(80px * sin(612deg) * 30 / 100)) rotate(612deg);
+  }
+  71% {
+    transform: translate(calc(80px * cos(615.6deg) * 29 / 100), calc(80px * sin(615.6deg) * 29 / 100)) rotate(615.6deg);
+  }
+  72% {
+    transform: translate(calc(80px * cos(619.2deg) * 28 / 100), calc(80px * sin(619.2deg) * 28 / 100)) rotate(619.2deg);
+  }
+  73% {
+    transform: translate(calc(80px * cos(622.8deg) * 27 / 100), calc(80px * sin(622.8deg) * 27 / 100)) rotate(622.8deg);
+  }
+  74% {
+    transform: translate(calc(80px * cos(626.4deg) * 26 / 100), calc(80px * sin(626.4deg) * 26 / 100)) rotate(626.4deg);
+  }
+  75% {
+    transform: translate(calc(80px * cos(630deg) * 25 / 100), calc(80px * sin(630deg) * 25 / 100)) rotate(630deg);
+  }
+  76% {
+    transform: translate(calc(80px * cos(633.6deg) * 24 / 100), calc(80px * sin(633.6deg) * 24 / 100)) rotate(633.6deg);
+  }
+  77% {
+    transform: translate(calc(80px * cos(637.2deg) * 23 / 100), calc(80px * sin(637.2deg) * 23 / 100)) rotate(637.2deg);
+  }
+  78% {
+    transform: translate(calc(80px * cos(640.8deg) * 22 / 100), calc(80px * sin(640.8deg) * 22 / 100)) rotate(640.8deg);
+  }
+  79% {
+    transform: translate(calc(80px * cos(644.4deg) * 21 / 100), calc(80px * sin(644.4deg) * 21 / 100)) rotate(644.4deg);
+  }
+  80% {
+    transform: translate(calc(80px * cos(648deg) * 20 / 100), calc(80px * sin(648deg) * 20 / 100)) rotate(648deg);
+  }
+  81% {
+    transform: translate(calc(80px * cos(651.6deg) * 19 / 100), calc(80px * sin(651.6deg) * 19 / 100)) rotate(651.6deg);
+  }
+  82% {
+    transform: translate(calc(80px * cos(655.2deg) * 18 / 100), calc(80px * sin(655.2deg) * 18 / 100)) rotate(655.2deg);
+  }
+  83% {
+    transform: translate(calc(80px * cos(658.8deg) * 17 / 100), calc(80px * sin(658.8deg) * 17 / 100)) rotate(658.8deg);
+  }
+  84% {
+    transform: translate(calc(80px * cos(662.4deg) * 16 / 100), calc(80px * sin(662.4deg) * 16 / 100)) rotate(662.4deg);
+  }
+  85% {
+    transform: translate(calc(80px * cos(666deg) * 15 / 100), calc(80px * sin(666deg) * 15 / 100)) rotate(666deg);
+  }
+  86% {
+    transform: translate(calc(80px * cos(669.6deg) * 14 / 100), calc(80px * sin(669.6deg) * 14 / 100)) rotate(669.6deg);
+  }
+  87% {
+    transform: translate(calc(80px * cos(673.2deg) * 13 / 100), calc(80px * sin(673.2deg) * 13 / 100)) rotate(673.2deg);
+  }
+  88% {
+    transform: translate(calc(80px * cos(676.8deg) * 12 / 100), calc(80px * sin(676.8deg) * 12 / 100)) rotate(676.8deg);
+  }
+  89% {
+    transform: translate(calc(80px * cos(680.4deg) * 11 / 100), calc(80px * sin(680.4deg) * 11 / 100)) rotate(680.4deg);
+  }
+  90% {
+    transform: translate(calc(80px * cos(684deg) * 10 / 100), calc(80px * sin(684deg) * 10 / 100)) rotate(684deg);
+  }
+  91% {
+    transform: translate(calc(80px * cos(687.6deg) * 9 / 100), calc(80px * sin(687.6deg) * 9 / 100)) rotate(687.6deg);
+  }
+  92% {
+    transform: translate(calc(80px * cos(691.2deg) * 8 / 100), calc(80px * sin(691.2deg) * 8 / 100)) rotate(691.2deg);
+  }
+  93% {
+    transform: translate(calc(80px * cos(694.8deg) * 7 / 100), calc(80px * sin(694.8deg) * 7 / 100)) rotate(694.8deg);
+  }
+  94% {
+    transform: translate(calc(80px * cos(698.4deg) * 6 / 100), calc(80px * sin(698.4deg) * 6 / 100)) rotate(698.4deg);
+  }
+  95% {
+    transform: translate(calc(80px * cos(702deg) * 5 / 100), calc(80px * sin(702deg) * 5 / 100)) rotate(702deg);
+  }
+  96% {
+    transform: translate(calc(80px * cos(705.6deg) * 4 / 100), calc(80px * sin(705.6deg) * 4 / 100)) rotate(705.6deg);
+  }
+  97% {
+    transform: translate(calc(80px * cos(709.2deg) * 3 / 100), calc(80px * sin(709.2deg) * 3 / 100)) rotate(709.2deg);
+  }
+  98% {
+    transform: translate(calc(80px * cos(712.8deg) * 2 / 100), calc(80px * sin(712.8deg) * 2 / 100)) rotate(712.8deg);
+  }
+  99% {
+    transform: translate(calc(80px * cos(716.4deg) * 1 / 100), calc(80px * sin(716.4deg) * 1 / 100)) rotate(716.4deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0);
+  }
+}
+@keyframes icon-show {
+  0% {
+    transform: scale(0.8, 1) translate(0, 0);
+    opacity: 0;
+  }
+  15% {
+    transform: scale(0.9, 1) translate(0, -20px);
+  }
+  30% {
+    transform: scale(1, 1) translate(0, -16px);
+  }
+  50% {
+    transform: scale(1, 0.9) translate(0, -12px);
+  }
+  100% {
+    transform: scale(1, 1) translate(0, -20px);
+  }
+  30%, 100% {
+    opacity: 1;
+  }
+}
+.icon-group {
+  animation: icon-show 0.8s linear 1.3s forwards;
+}/*# sourceMappingURL=loading-after.css.map */

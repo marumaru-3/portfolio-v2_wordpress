@@ -1,0 +1,76 @@
+.loading-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fffefa;
+  z-index: 999;
+}
+
+.loading-wrapper.hide {
+  display: none;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.circle:nth-child(1) {
+  background-color: #ef476f;
+}
+
+.circle:nth-child(2) {
+  background-color: #55aaff;
+}
+
+.circle:nth-child(3) {
+  background-color: #ffd166;
+}
+
+.icon-group {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.icon.fire {
+  color: #ef476f;
+}
+
+.icon.laptop {
+  color: #55aaff;
+}
+
+.icon.smile {
+  color: #ffd166;
+}
+
+.icon .material-symbols-outlined {
+  font-size: 120px;
+  width: 120px;
+  height: 120px;
+}
+
+.icon .material-symbols-outlined {
+  border-radius: 50%;
+}
+
+.icon p {
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}/*# sourceMappingURL=loading.css.map */
