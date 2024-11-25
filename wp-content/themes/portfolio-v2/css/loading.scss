@@ -84,15 +84,16 @@
   color: #ffd166;
 }
 .icon .material-symbols-outlined {
-  font-size: 120px;
-  width: 120px;
-  height: 120px;
+  font-size: min(120px, 24vw);
+  width: min(120px, 24vw);
+  height: min(120px, 24vw);
 }
 .icon .material-symbols-outlined {
   border-radius: 50%;
 }
 .icon p {
   font-weight: bold;
+  font-size: min(20px, 4.5vw);
   text-align: center;
   margin: 0;
 }
