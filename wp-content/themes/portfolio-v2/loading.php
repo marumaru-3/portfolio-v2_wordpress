@@ -1,4 +1,4 @@
-<?php if (is_home() || is_front_page()) : ?>
+<?php if (is_front_page()) : ?>
   <div id="loading"
     class="loading-wrapper">
     <div class="circle"></div>
@@ -25,7 +25,11 @@
     const loading = document.getElementById('loading');
 
     window.addEventListener('load', () => {
-      loading.classList.add('hide');
+      loading.classList.add('load-end');
+
+      setTimeout(() => {
+        loading.classList.add('hide');
+      }, 3000)
     }, false);
   </script>
 <?php endif; ?>

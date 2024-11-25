@@ -1,5 +1,6 @@
 <?php
-function my_setup() {
+function my_setup()
+{
   add_theme_support('post-thumbnails'); // アイキャッチ画像を有効化
   add_theme_support('automatic-feed-links'); // 投稿とコメントのRSSフィードのリンクを有効化
   add_theme_support('title-tag'); // titleタグ自動生成
@@ -13,13 +14,13 @@ function my_setup() {
 }
 add_action('after_setup_theme', 'my_setup');
 
-function my_script_init() {
+function my_script_init()
+{
   // WordPressに含まれているjquery.jsを読み込まない
   wp_deregister_script('jquery');
 
   wp_enqueue_style('common-css', get_template_directory_uri() . '/css/common.css', array(), '1.0.1');
   wp_enqueue_style('loading-css', get_template_directory_uri() . '/css/loading.css', array(), '1.0.1');
-  wp_enqueue_style('loading-now-css', get_template_directory_uri() . '/css/loading-now.css', array(), '1.0.1');
   wp_enqueue_style('style-css', get_template_directory_uri() . '/css/style.css', array(), '1.0.1');
   wp_enqueue_script('menu-js', get_template_directory_uri() . '/js/menu.js', array(), '1.0.1', true);
   wp_enqueue_script('button-js', get_template_directory_uri() . '/js/button.js', array(), '1.0.1', true);

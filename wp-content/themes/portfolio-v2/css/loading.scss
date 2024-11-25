@@ -1,4 +1,24 @@
-.loading-wrapper {
+@function calc-angle($percentage) {
+  @return $percentage * 3.6deg;
+}
+
+@mixin create-keyframe($percentage) {
+  #{$percentage}% {
+    transform: translate(
+        calc(100px * cos(#{calc-angle($percentage)})),
+        calc(100px * sin(#{calc-angle($percentage)}))
+      )
+      rotate(calc-angle($percentage));
+  }
+}
+
+@keyframes orbit {
+  @for $i from 0 to 101 {
+    @include create-keyframe($i);
+  }
+}
+
+#loading.loading-wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -6,13 +26,19 @@
   height: 100vh;
   background-color: #fffefa;
   z-index: 999;
+
+  &.hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.7s;
+  }
+
+  &.none {
+    display: none;
+  }
 }
 
-.loading-wrapper.hide {
-  display: none;
-}
-
-.circle {
+#loading .circle {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -22,16 +48,20 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-}
+  animation: orbit 2s linear infinite;
 
-.circle:nth-child(1) {
-  background-color: #ef476f;
-}
-.circle:nth-child(2) {
-  background-color: #55aaff;
-}
-.circle:nth-child(3) {
-  background-color: #ffd166;
+  &:nth-child(1) {
+    background-color: #ef476f;
+    animation-delay: 0s;
+  }
+  &:nth-child(2) {
+    background-color: #55aaff;
+    animation-delay: -0.66s;
+  }
+  &:nth-child(3) {
+    background-color: #ffd166;
+    animation-delay: -1.32s;
+  }
 }
 
 .icon-group {
@@ -66,3 +96,85 @@
   text-align: center;
   margin: 0;
 }
+
+// 円が回転して中央に行き消えるアニメーション
+$circle-count: 3;
+$circle-radius: 80px;
+
+@function calc-angle($percentage, $startAngle) {
+  @return $percentage * 3.6deg + $startAngle;
+}
+
+@mixin create-keyframe($percentage, $startAngle) {
+  #{$percentage}% {
+    transform: translate(
+        calc(
+          (#{$circle-radius} * cos(#{calc-angle($percentage, $startAngle)})) *
+            (100 - $percentage) / 100
+        ),
+        calc(
+          (#{$circle-radius} * sin(#{calc-angle($percentage, $startAngle)})) *
+            (100 - $percentage) / 100
+        )
+      )
+      rotate(calc-angle($percentage, $startAngle));
+  }
+}
+
+@mixin create-circle-animation($index) {
+  @keyframes orbit#{$index} {
+    @for $i from 0 to 100 {
+      @include create-keyframe($i, $index * 120deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(0);
+    }
+  }
+}
+
+@keyframes circle-hide {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@for $i from 1 to $circle-count + 1 {
+  #loading.load-end .circle:nth-child(#{$i}) {
+    animation: orbit#{$i} 1s linear, circle-hide 0.3s linear 1s forwards;
+  }
+  @include create-circle-animation($i);
+}
+// / 円が回転して中央に行き消えるアニメーション
+
+// アイコンが出てくるアニメーション
+@keyframes icon-show {
+  0% {
+    transform: scale(0.8, 1) translate(0, 0);
+    opacity: 0;
+  }
+  15% {
+    transform: scale(0.9, 1) translate(0, -20px);
+  }
+  30% {
+    transform: scale(1, 1) translate(0, -16px);
+  }
+  50% {
+    transform: scale(1, 0.9) translate(0, -12px);
+  }
+  100% {
+    transform: scale(1, 1) translate(0, -20px);
+  }
+  30%,
+  100% {
+    opacity: 1;
+  }
+}
+
+#loading.load-end .icon-group {
+  animation: icon-show 0.8s linear 1.3s forwards;
+}
+// / アイコンが出てくるアニメーション
