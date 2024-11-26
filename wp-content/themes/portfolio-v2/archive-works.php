@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main id="archive-works"
-      class="pages-main archive-main">
+  class="pages-main archive-main">
   <div class="section_bg">
     <div></div>
     <div></div>
@@ -11,6 +11,10 @@
       Works
       <span class="sub">今までのサイト制作実績</span>
     </h2>
+    <p class="works-att">
+      今まで制作したWebサイトの制作事例を一部ご紹介します。<br>
+      ※こちらの制作事例はあくまで参照ですので、データの印刷等は御控えください。
+    </p>
     <ul class="archive-list">
       <?php
       if (wp_is_mobile()) {
@@ -27,15 +31,15 @@
       $wp_query = new WP_Query($args);
       if (have_posts()): while (have_posts()): the_post();
       ?>
-      <li>
-        <a href="<?php the_permalink(); ?>">
-          <div class="archive-img">
-            <?php the_post_thumbnail('full') ?>
-          </div>
-          <p><?php the_title(); ?></p>
-        </a>
-      </li>
-      <?php endwhile; ?>
+          <li>
+            <a href="<?php the_permalink(); ?>">
+              <div class="archive-img">
+                <?php the_post_thumbnail('full') ?>
+              </div>
+              <p><?php the_title(); ?></p>
+            </a>
+          </li>
+        <?php endwhile; ?>
       <?php endif ?>
       <?php wp_reset_postdata(); ?>
   </div>
