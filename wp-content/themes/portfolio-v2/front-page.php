@@ -10,7 +10,7 @@
       <div></div>
     </div>
     <div class="window-click-contents window-modal-open">
-      <img src="<?php echo get_theme_file_uri('./images/top/visual/visual-sp.svg'); ?>"
+      <img src="<?php echo get_theme_file_uri('/images/top/visual/visual-sp.svg'); ?>"
         alt="詳しくはこちらをクリック！" />
     </div>
     <div class="window-modal">
@@ -199,13 +199,34 @@
         <span>制作スキル</span>
       </h2>
       <ul class="skill-bubbles">
-        <li data-skill="html-css">HTML/CSS</li>
-        <li data-skill="js">JavaScript</li>
-        <li data-skill="vue-js">Vue.js</li>
-        <li data-skill="php">PHP</li>
-        <li data-skill="wordpress">WordPress</li>
-        <li data-skill="shopify">Shopify</li>
-        <li data-skill="studio">Studio</li>
+        <li data-skill="html-css">
+          <img src="<?php echo get_theme_file_uri('/images/top/skills/css-logo.png'); ?>" alt="">
+          <span class="skill-text">HTML/CSS</span>
+        </li>
+        <li data-skill="js">
+          <img src="<?php echo get_theme_file_uri('/images/top/skills/js-logo.png'); ?>" alt="">
+          <span class="skill-text">JavaScript</span>
+        </li>
+        <li data-skill="vue-js">
+          <img src="<?php echo get_theme_file_uri('/images/top/skills/vue-logo.png'); ?>" alt="">
+          <span class="skill-text">Vue.js</span>
+        </li>
+        <li data-skill="php">
+          <img src="<?php echo get_theme_file_uri('/images/top/skills/php-logo.png'); ?>" alt="">
+          <span class="skill-text">PHP</span>
+        </li>
+        <li data-skill="wordpress">
+          <img src="<?php echo get_theme_file_uri('/images/top/skills/wp-logo.png'); ?>" alt="">
+          <span class="skill-text">WordPress</span>
+        </li>
+        <li data-skill="shopify">
+          <img src="<?php echo get_theme_file_uri('/images/top/skills/shopify-logo.png'); ?>" alt="">
+          <span class="skill-text">Shopify</span>
+        </li>
+        <li data-skill="studio">
+          <img src="<?php echo get_theme_file_uri('/images/top/skills/studio-logo.jpg'); ?>" alt="">
+          <span class="skill-text">Studio</span>
+        </li>
       </ul>
       <div class="skill-detail">
         <div id="html-css"
@@ -282,6 +303,7 @@
         Works
         <span>今までのサイト制作実績</span>
       </h2>
+      <p class="works-att">※こちらの制作事例はあくまで参照ですので、データの印刷等は御控えください。</p>
       <div class="works-box_wrapper">
         <?php
         $args = [

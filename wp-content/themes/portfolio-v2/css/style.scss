@@ -500,8 +500,11 @@ section {
       background-color: #fff;
       border-radius: 50%;
       cursor: pointer;
-      display: grid;
-      place-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
       font-size: 20px;
       font-weight: bold;
       width: min(24vw, 200px);
@@ -549,6 +552,10 @@ section {
       &:nth-child(7) {
         top: 56%;
         left: 79%;
+      }
+
+      img {
+        width: min(80px, 10vw);
       }
     }
   }
@@ -627,7 +634,7 @@ section {
 
   h2 {
     position: relative;
-    margin-bottom: 64px;
+    margin-bottom: 24px;
 
     &::before {
       content: "";
@@ -640,6 +647,10 @@ section {
       height: 400px;
       z-index: -1;
     }
+  }
+
+  .works-att {
+    margin-bottom: 40px;
   }
 
   .works-box_wrapper {
@@ -1537,6 +1548,10 @@ footer {
         left: 50%;
         transform: translateX(-50%);
       }
+    }
+
+    .works-att {
+      font-size: 14px;
     }
 
     .works-box_wrapper {

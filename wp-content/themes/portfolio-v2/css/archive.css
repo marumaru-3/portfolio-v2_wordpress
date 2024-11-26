@@ -7,6 +7,12 @@
 #archive-works .section_bg div:nth-of-type(3) {
   background-color: rgba(239, 71, 111, 0.2);
 }
+#archive-works .pages-title {
+  margin-bottom: 24px;
+}
+#archive-works .works-att {
+  margin-bottom: 64px;
+}
 
 #archive-web-app .section_bg div:nth-of-type(1) {
   background-color: rgba(239, 71, 111, 0.4);
@@ -63,6 +69,10 @@
   }
 }
 @media (max-width: 699px) {
+  #archive-works .works-att {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
   .archive-list {
     gap: 40px;
   }

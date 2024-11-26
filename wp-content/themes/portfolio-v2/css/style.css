@@ -443,8 +443,11 @@ section h2 span {
   background-color: #fff;
   border-radius: 50%;
   cursor: pointer;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
   font-size: 20px;
   font-weight: bold;
   width: min(24vw, 200px);
@@ -501,6 +504,9 @@ section h2 span {
 #skills .skill-bubbles li:nth-child(7) {
   top: 56%;
   left: 79%;
+}
+#skills .skill-bubbles li img {
+  width: min(80px, 10vw);
 }
 #skills .skill-detail {
   display: none;
@@ -566,7 +572,7 @@ section h2 span {
 }
 #works h2 {
   position: relative;
-  margin-bottom: 64px;
+  margin-bottom: 24px;
 }
 #works h2::before {
   content: "";
@@ -578,6 +584,9 @@ section h2 span {
   width: 400px;
   height: 400px;
   z-index: -1;
+}
+#works .works-att {
+  margin-bottom: 40px;
 }
 #works .works-box_wrapper {
   margin-bottom: 88px;
@@ -1270,6 +1279,9 @@ footer .copyright {
     aspect-ratio: 1/1;
     left: 50%;
     transform: translateX(-50%);
+  }
+  #works .works-att {
+    font-size: 14px;
   }
   #works .works-box_wrapper {
     margin-bottom: 40px;
