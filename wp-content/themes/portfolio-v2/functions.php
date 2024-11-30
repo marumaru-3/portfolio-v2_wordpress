@@ -42,6 +42,7 @@ add_action('wp_enqueue_scripts', function () {
   // お問い合わせページのとき読み込む
   if (is_page('contact')) {
     wp_enqueue_style('contact-css', get_template_directory_uri() . '/css/contact.css', array(), '1.0.1');
+    wp_enqueue_script('contact-js', get_template_directory_uri() . '/js/contact.js', array(), '1.0.1', true);
   }
 
   // 制作実績とウェブアプリの個別ページのとき読み込む

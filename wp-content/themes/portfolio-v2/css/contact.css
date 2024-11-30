@@ -3,6 +3,8 @@
   border-radius: 40px;
   box-shadow: 0 4px 48px 0 rgba(0, 0, 0, 0.08);
   padding: 80px;
+  max-width: 1080px;
+  margin-inline: auto;
 }
 .contact-form .form-info {
   line-height: 1.8;
@@ -80,35 +82,23 @@
   align-items: flex-start;
   gap: 8px;
 }
-.contact-form .wpcf7-form .wpcf7-submit {
-  background-color: #fff;
-  background-image: linear-gradient(90deg, #000 50%, transparent 50%);
-  background-position: 100%;
-  background-size: 250%;
-  cursor: pointer;
-  display: inline-block;
-  border: 2px solid #000;
-  border-radius: 100px;
+.contact-form .wpcf7-form .btn.soushin {
   display: grid;
   place-items: center;
-  font-weight: bold;
+  margin-top: 32px;
   width: 240px;
   height: 64px;
-  transition: 1s all;
 }
-.contact-form .wpcf7-form .wpcf7-submit:hover {
-  background-position: 0;
-  color: #fff;
+.contact-form .wpcf7-form .btn.soushin p {
+  width: 100%;
+  height: 100%;
 }
-.contact-form .wpcf7-form .wpcf7-submit:disabled {
-  border-color: rgba(0, 0, 0, 0.3);
-  color: rgba(0, 0, 0, 0.3);
+.contact-form .wpcf7-form .btn.soushin.disabled {
   pointer-events: none;
-  transition: none;
+  border-color: #9d9d9d;
 }
-.contact-form .wpcf7-form .wpcf7-submit:disabled:hover {
-  background-position: 100%;
-  color: rgba(0, 0, 0, 0.3);
+.contact-form .wpcf7-form .btn.soushin.disabled input {
+  color: #9d9d9d;
 }
 .contact-form .wpcf7-form span.wpcf7-spinner,
 .contact-form .wpcf7-form .wpcf7-response-output,

@@ -25,7 +25,7 @@ body.modal-active {
 .in-bl {
   display: inline-block;
 }
-a.btn {
+.btn {
   position: relative;
   background-color: #fff;
   display: block;
@@ -59,6 +59,20 @@ a.btn {
       width: 100vmax;
       height: 100vmax;
     }
+
+    input {
+      color: #fff;
+    }
+  }
+
+  input {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: 1s all;
   }
 }
 @media (max-width: 1199px) {
@@ -280,8 +294,9 @@ section {
 
   h2 {
     font-size: 64px;
-    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff,
-      1px -1px 0 #fff, 0px 1px 0 #fff, 0-1px 0 #fff, -1px 0 0 #fff, 1px 0 0 #fff;
+    text-shadow: 1px 1px 1px #fff, -1px -1px 1px #fff, -1px 1px 1px #fff,
+      1px -1px 1px #fff, 0px 1px 1px #fff, 0 -1px 1px #fff, -1px 0 1px #fff,
+      1px 0 1px #fff;
 
     span {
       display: block;
@@ -724,7 +739,7 @@ section {
           margin-bottom: 20px;
         }
 
-        a.btn {
+        .btn {
           position: absolute;
           top: 0;
           right: 24%;
@@ -844,6 +859,7 @@ section {
   }
 
   .other-list {
+    position: relative;
     display: flex;
     gap: 72px;
     overflow: auto;
@@ -880,6 +896,18 @@ section {
             height: 120%;
           }
         }
+      }
+    }
+
+    .scroll-att {
+      position: absolute;
+      left: 0;
+      bottom: 16px;
+
+      &_inner {
+        display: flex;
+        align-items: center;
+        gap: 8px;
       }
     }
   }
@@ -1138,7 +1166,7 @@ footer {
           p {
             margin-bottom: 16px;
           }
-          a.btn {
+          .btn {
             position: relative;
             top: auto;
             right: auto;
@@ -1186,6 +1214,23 @@ footer {
     }
   }
   // / Web Application
+
+  // その他の実績
+  .other-group {
+    h4 {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+
+    .other-list {
+      position: relative;
+      display: flex;
+      gap: 72px;
+      overflow: auto;
+      padding-bottom: 64px;
+    }
+  }
+  // / その他の実績
 
   // footer
   footer {
@@ -1272,7 +1317,7 @@ footer {
   .w-1200 {
     padding: 0 16px;
   }
-  a.btn {
+  .btn {
     border-width: 1px;
   }
   // / 共通
@@ -1487,31 +1532,31 @@ footer {
         font-size: min(20px, 4vw);
 
         &:nth-child(1) {
-          top: -13%;
+          top: -10%;
           left: 57%;
         }
         &:nth-child(2) {
-          top: 6%;
+          top: 9%;
           left: 6%;
         }
         &:nth-child(3) {
-          top: 14%;
+          top: 17%;
           left: 52%;
         }
         &:nth-child(4) {
-          top: 34%;
+          top: 37%;
           left: 7%;
         }
         &:nth-child(5) {
-          top: 42%;
+          top: 45%;
           left: 55%;
         }
         &:nth-child(6) {
-          top: 64%;
+          top: 67%;
           left: 6%;
         }
         &:nth-child(7) {
-          top: 72%;
+          top: 75%;
           left: 53%;
         }
       }

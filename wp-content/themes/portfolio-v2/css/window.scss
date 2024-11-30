@@ -324,7 +324,7 @@
       aspect-ratio: auto;
 
       .tab-menu {
-        border-bottom: 3px solid #e0e0e0;
+        border-bottom: 1px solid #e0e0e0;
 
         &_item {
           &.is-active {
@@ -344,6 +344,12 @@
 
             .item_inner {
               padding: 8px;
+            }
+          }
+
+          .item_inner {
+            &:hover {
+              background-color: transparent;
             }
           }
 

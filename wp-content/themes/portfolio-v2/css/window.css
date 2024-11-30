@@ -241,7 +241,7 @@
     aspect-ratio: auto;
   }
   .window-modal .window-contents .tab-menu {
-    border-bottom: 3px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
   }
   .window-modal .window-contents .tab-menu_item.is-active {
     background: none;
@@ -259,6 +259,9 @@
   }
   .window-modal .window-contents .tab-menu_item.is-active .item_inner {
     padding: 8px;
+  }
+  .window-modal .window-contents .tab-menu_item .item_inner:hover {
+    background-color: transparent;
   }
   .window-modal .window-contents .tab-menu_item:has(+ .is-active)::before, .window-modal .window-contents .tab-menu_item:has(+ .is-active)::after {
     display: none;
