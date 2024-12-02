@@ -1,0 +1,227 @@
+// 初期設定
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+body {
+  color: #222;
+  overflow-x: hidden;
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+main {
+  position: relative;
+  display: block;
+  contain: paint;
+}
+section {
+  position: relative;
+}
+img {
+  width: auto;
+  max-width: 100%;
+  vertical-align: bottom;
+}
+a,
+button {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+button {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+body,
+select,
+input,
+textarea,
+button {
+  font-family: "Noto Sans JP", sans-serif;
+}
+p {
+  font-weight: 500;
+}
+
+@media (max-width: 899px) {
+  main {
+    contain: none;
+    overflow: hidden;
+  }
+}
+// / 初期設定
+
+// 全体
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #fffefa;
+}
+body.modal-active {
+  overflow: hidden;
+}
+// / 全体
+
+// 共通
+.w-1200 {
+  box-sizing: content-box;
+  position: relative;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 0 40px;
+}
+.pc-none,
+.pc-tb-none {
+  display: none;
+}
+.in-bl {
+  display: inline-block;
+}
+.btn {
+  position: relative;
+  background-color: #fff;
+  display: block;
+  border: 1px solid #000;
+  border-radius: 100px;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+  overflow: hidden;
+  transition: 1s all;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: var(--hover-y, 50%);
+    left: var(--hover-x, 50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: #000;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out, top 0s, left 0s;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  &:hover {
+    color: #fff;
+
+    &::before {
+      width: 100vmax;
+      height: 100vmax;
+    }
+
+    input {
+      color: #fff;
+    }
+  }
+
+  input {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: 1s all;
+  }
+}
+@media (max-width: 1199px) {
+  .w-1200 {
+    max-width: 900px;
+  }
+  .tb-none {
+    display: none !important;
+  }
+  .pc-none {
+    display: block !important;
+  }
+}
+
+@media (max-width: 699px) {
+  .w-1200 {
+    padding: 0 16px;
+  }
+  .btn {
+    border-width: 1px;
+  }
+}
+// / 共通
+
+// セクション共通
+section {
+  position: relative;
+  padding: 80px 0;
+
+  .section_bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-50%);
+    z-index: -1;
+
+    div {
+      position: absolute;
+      border-radius: 50%;
+    }
+  }
+
+  h2 {
+    font-size: 64px;
+    text-shadow: 1px 1px 1px #fff, -1px -1px 1px #fff, -1px 1px 1px #fff,
+      1px -1px 1px #fff, 0px 1px 1px #fff, 0 -1px 1px #fff, -1px 0 1px #fff,
+      1px 0 1px #fff;
+
+    span {
+      display: block;
+      font-size: 32%;
+      margin-top: min(2.4vw, 24px);
+    }
+  }
+}
+@media (max-width: 1199px) {
+  section {
+    h2 {
+      font-size: min(10vw, 64px);
+    }
+  }
+}
+
+@media (max-width: 699px) {
+  section {
+    padding: 40px 0;
+
+    h2 {
+      span {
+        margin-top: 0;
+      }
+    }
+  }
+}
+// / セクション共通

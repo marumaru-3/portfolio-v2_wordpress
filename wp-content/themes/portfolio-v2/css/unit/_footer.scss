@@ -1,0 +1,190 @@
+// footer
+footer {
+  position: relative;
+  overflow: hidden;
+
+  .footer-inner {
+    background-color: #fff;
+    border: 8px solid #073b4c;
+    border-bottom: none;
+    border-radius: 40px 40px 0 0;
+    width: calc(100% + 16px);
+    padding: 40px 0 0;
+    margin-left: -8px;
+  }
+
+  .footer-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+
+    &_left {
+      .site-title {
+        position: absolute;
+        font-size: 32px;
+        padding: 0;
+
+        .name {
+          font-size: 16px;
+        }
+      }
+
+      .footer-menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 104px;
+
+        a {
+          transition: 0.3s all;
+
+          &:hover {
+            color: #ffd166;
+          }
+        }
+      }
+    }
+    &_right {
+      display: flex;
+      align-items: flex-end;
+      gap: 64px;
+
+      .btn {
+        border-width: 1px;
+        display: flex;
+        font-size: 24px;
+        flex-direction: column;
+        justify-content: center;
+
+        &.github {
+          border-radius: 24px;
+          width: min(16vw, 160px);
+          height: auto;
+          aspect-ratio: 9/7;
+
+          .title {
+            display: inline-block;
+            background-image: url(../images/sns-logo/github-mark_white.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            transition: 0.3s all;
+
+            img {
+              opacity: 1;
+              transition: 0.3s all;
+            }
+          }
+        }
+        &.contact {
+          border-radius: 40px;
+          width: min(28vw, 280px);
+          height: auto;
+          aspect-ratio: 9/6;
+        }
+
+        p {
+          font-weight: bold;
+        }
+
+        .title {
+          margin-bottom: 8px;
+
+          img {
+            width: 48px;
+          }
+        }
+        .sub {
+          font-size: 70%;
+        }
+
+        &:hover {
+          &.github {
+            .title {
+              display: inline-block;
+              background-repeat: no-repeat;
+              background-size: contain;
+
+              img {
+                opacity: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 1199px) {
+  footer {
+    .w-1200 {
+      max-width: 1200px;
+    }
+
+    .footer-flex {
+      &_left {
+        .footer-menu {
+          gap: 32px;
+        }
+      }
+
+      &_right {
+        gap: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 899px) {
+  footer {
+    .footer-flex {
+      &_left {
+        .footer-menu {
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+// / footer
+
+@media (max-width: 699px) {
+  // footer
+  footer {
+    .footer-flex {
+      flex-direction: column;
+      gap: 32px;
+
+      &_left {
+        .footer-menu {
+          margin-top: 96px;
+        }
+      }
+
+      &_right {
+        gap: 0;
+        justify-content: space-between;
+
+        .btn {
+          &.github {
+            width: 35%;
+          }
+          &.contact {
+            border-radius: 24px;
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+  // / footer
+}
