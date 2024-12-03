@@ -2088,13 +2088,13 @@ footer .copyright {
   background: #9beed6;
 }
 .window-contents.window-contents-web-app {
-  background-color: #f0b4f6;
+  background-color: #f8cbff;
 }
 .window-contents.window-contents-web-app .tab-menu_item.is-active::after {
-  background: #f0b4f6;
+  background: #f8cbff;
 }
 .window-contents.window-contents-web-app .tab-menu_item:has(+ .is-active)::after {
-  background: #f0b4f6;
+  background: #f8cbff;
 }
 .window-contents .tab-menu {
   display: flex;

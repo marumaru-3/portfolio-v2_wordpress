@@ -22,14 +22,24 @@
   </div>
 
   <script>
+    // セッションストレージからフラグを取得
+    const isFirstLoad = sessionStorage.getItem('isFirstLoad');
+
     const loading = document.getElementById('loading');
 
     window.addEventListener('load', () => {
-      loading.classList.add('load-end');
+      if (isFirstLoad !== 'true') {
+        loading.classList.add('load-end');
 
-      setTimeout(() => {
+        setTimeout(() => {
+          loading.classList.add('hide');
+          // セッションストレージにフラグを保存
+          sessionStorage.setItem('isFirstLoad', true);
+        }, 3000)
+
+      } else {
         loading.classList.add('hide');
-      }, 3000)
+      }
     }, false);
   </script>
 <?php endif; ?>
