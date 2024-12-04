@@ -76,4 +76,13 @@
     }
   }
 }
+@media (max-width: 699px) {
+  .other-group {
+    .other-list {
+      li {
+        min-width: 100%;
+      }
+    }
+  }
+}
 // / その他の実績

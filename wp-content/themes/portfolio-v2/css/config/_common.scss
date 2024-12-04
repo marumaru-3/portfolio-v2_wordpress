@@ -159,6 +159,20 @@ body.modal-active {
   .pc-none {
     display: block !important;
   }
+
+  .btn {
+    transition: 0.5s all;
+    &::before {
+      display: none;
+    }
+    &:hover {
+      background-color: #000;
+    }
+
+    input {
+      transition: 0.5s all;
+    }
+  }
 }
 
 @media (max-width: 699px) {

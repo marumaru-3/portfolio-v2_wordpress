@@ -167,6 +167,18 @@ body.modal-active {
   .pc-none {
     display: block !important;
   }
+  .btn {
+    transition: 0.5s all;
+  }
+  .btn::before {
+    display: none;
+  }
+  .btn:hover {
+    background-color: #000;
+  }
+  .btn input {
+    transition: 0.5s all;
+  }
 }
 @media (max-width: 699px) {
   .w-1200 {
@@ -2040,6 +2052,11 @@ footer .copyright {
     padding-bottom: 64px;
   }
 }
+@media (max-width: 699px) {
+  .other-group .other-list li {
+    min-width: 100%;
+  }
+}
 .window-click-contents {
   position: relative;
   cursor: pointer;
@@ -2498,6 +2515,12 @@ footer .copyright {
   width: 100%;
   height: 100%;
 }
+.contact-form .wpcf7-form .btn.soushin input {
+  color: #000;
+}
+.contact-form .wpcf7-form .btn.soushin:hover input {
+  color: #fff;
+}
 .contact-form .wpcf7-form .btn.soushin.disabled {
   pointer-events: none;
   border-color: #9d9d9d;
@@ -2650,6 +2673,19 @@ footer .copyright {
 .single-main .window-modal {
   margin-bottom: 40px;
 }
+.single-main .window-click-contents {
+  aspect-ratio: 5/3;
+  border-radius: 16px;
+  box-shadow: 0px 2px 5px 1px rgba(60, 60, 60, 0.25);
+  overflow: hidden;
+}
+.single-main .window-click-contents img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 0%;
+     object-position: 50% 0%;
+}
 
 #single-web-app .section_bg div:nth-of-type(1) {
   background-color: rgba(239, 71, 111, 0.4);
@@ -2670,20 +2706,6 @@ footer .copyright {
   position: relative;
   font-size: 28px;
   text-align: center;
-}
-
-.window-click-contents {
-  aspect-ratio: 5/3;
-  border-radius: 16px;
-  box-shadow: 0px 2px 5px 1px rgba(60, 60, 60, 0.25);
-  overflow: hidden;
-}
-.window-click-contents img {
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 50% 0%;
-     object-position: 50% 0%;
 }
 
 .single-att {

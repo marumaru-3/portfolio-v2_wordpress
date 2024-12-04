@@ -113,6 +113,16 @@
         height: 100%;
       }
 
+      input {
+        color: #000;
+      }
+
+      &:hover {
+        input {
+          color: #fff;
+        }
+      }
+
       &.disabled {
         pointer-events: none;
         border-color: #9d9d9d;
