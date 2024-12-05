@@ -229,6 +229,10 @@ section h2 span {
     margin-top: 0;
   }
 }
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
 header {
   position: absolute;
   z-index: 100;
@@ -597,6 +601,14 @@ footer .footer-flex_right .btn:hover.github .title {
 }
 footer .footer-flex_right .btn:hover.github .title img {
   opacity: 0;
+}
+footer .recaptcha-text {
+  font-size: 14px;
+  text-align: center;
+  margin: 8px 0;
+}
+footer .recaptcha-text a {
+  text-decoration: underline;
 }
 footer .copyright {
   font-size: 14px;

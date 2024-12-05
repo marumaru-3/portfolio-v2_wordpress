@@ -239,3 +239,9 @@ section {
   }
 }
 // / セクション共通
+
+// reCAPTCHA サイド削除
+.grecaptcha-badge {
+  visibility: hidden;
+}
+// / reCAPTCHA サイド削除

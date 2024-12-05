@@ -41,6 +41,9 @@
           </a>
         </div>
       </div>
+      <p class="recaptcha-text">
+        このサイトはreCAPTCHAによって保護されており、Googleの<a href="https://policies.google.com/privacy">プライバシーポリシー</a>と<a href="https://policies.google.com/terms">利用規約</a>が<span class="in-bl">適用されます。</span>
+      </p>
       <p class="copyright">© 2024 SUZUKI YUKINAGA.</p>
     </div>
   </div>
