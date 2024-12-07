@@ -170,7 +170,7 @@
                 <?php endif; ?>
                 <?php if (get_field('purpose')) : ?>
                   <li>
-                    <h3>顧客の目的・課題</h3>
+                    <h3>制作の目的・課題</h3>
                     <p>
                       <?php the_field('purpose'); ?>
                     </p>
